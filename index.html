@@ -1,1940 +1,1732 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<meta name="theme-color" content="#0a0f18">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<meta name="apple-mobile-web-app-title" content="Tracker Andrade">
-<meta name="description" content="Sistema de control financiero - Andrade Detailing Studio">
-<link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIlRyYWNrZXIgQW5kcmFkZSBEZXRhaWxpbmcgU3R1ZGlvIiwKICAic2hvcnRfbmFtZSI6ICJUcmFja2VyIEFuZHJhZGUiLAogICJkZXNjcmlwdGlvbiI6ICJTaXN0ZW1hIGRlIGNvbnRyb2wgZmluYW5jaWVybyBwYXJhIEFuZHJhZGUgRGV0YWlsaW5nIFN0dWRpbyIsCiAgInN0YXJ0X3VybCI6ICIuIiwKICAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwKICAiYmFja2dyb3VuZF9jb2xvciI6ICIjZjVmNWY1IiwKICAidGhlbWVfY29sb3IiOiAiIzBhMGYxOCIsCiAgIm9yaWVudGF0aW9uIjogInBvcnRyYWl0IiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCNGJXeHVjejBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01DOXpkbWNpSUhacFpYZENiM2c5SWpBZ01DQXhPVElnTVRreUlqNDhjbVZqZENCM2FXUjBhRDBpTVRreUlpQm9aV2xuYUhROUlqRTVNaUlnWm1sc2JEMGlJekJoTUdZeE9DSXZQanh3WVhSb0lHUTlJazB4TURBZ05UQmpNQ3d5TnkwNU15d3hNREF0TVRBd0xERXdNSE10TVRBd0xURTBNeUF4TURBdE1UQXdJREV3TUhvaUlHWnBiR3c5SWlObVptWWlMejQ4Y0dGMGFDQmtQU0pOT0RBZ09EQm9NelJqTWlBd0lETWdNU0F6SUROMklEVjJMVFVqTXlBekxUTWdNeTB6SUROMExUVWdOUzAxZWlJZ1ptbHNiRDBpSTJNNVlUZzBZeUl2UGp3dmMzWm5QZz09IiwKICAgICAgInNpemVzIjogIjE5MngxOTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9zdmcreG1sIgogICAgfSwKICAgIHsKICAgICAgInNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUI0Yld4dWN6MGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TUM5emRtY2lJSFpwWlhkQ2IzZzlJakFnTUNBMU1USWdOVEV5SWo0OGNtVmpkQ0IzYVdSMGFEMGlOVEV5SWlCb1pXbG5hSFE5SWpVeE1pSWdabWxzYkQwaUl6QmhNR1l4T0NJdlBqeHdZWFJvSUdROUlrMHlOVFlnTVRNell6QXNOalF0TlRJc01URTJMVEUzTWl3eE1UWjhNU3d5TmpBZ01URTJMVEUzTWlBeE1UWWdNall3SURGOExUSXlOeXd5TkRndE1UY3lMREV4Tmkwb01URTJMREUzTWlreFFURXhOaTR3TWl3eE1UWXVNRE1nTUNBd0lEQWdNQ0F4SURFdE1UY3lJREV4TmlBeE1UWWdNVGN5SURFdU1EY3RNall3SURFeE5pMHhNVFlnTVRjeUxURXhOaUF4TFRJMk55NHdOaTB4TVRZdE1URTJJREUzTWkweE1UWTZNQ0EwTWlBd0lEQWdNQ0F3SURFZ01TMDBNQ0EwTWkweElEQXRNaTA0TkNBd0lERXRORElnTWpGNklpQm1hV3hzUFNJak1HRXdaakU0SWk4K1BIQmhkR2dnWkQwaVRUSTJOeUF5TVROb05qUmpNaUF3SURNZ01TQXpJRE40TkdZNUlEUXRNeUEwTFRNZ05DMHhJREF0TVMweExUUXRNeUF3TFRRdE15QTBMVEVnTUMweElERXRNSG9pSUdacGJHdzlJaU5qT1dFNE5HTWlMejQ4TDNOMlp6ND0iLAogICAgICAic2l6ZXMiOiAiNTEyeDUxMiIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiCiAgICB9CiAgXQp9">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<title>Tracker Andrade 📊</title>
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: transparent;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-  background: #f5f5f5;
-  padding-bottom: 70px;
-  overflow-x: hidden;
-}
-
-/* Header */
-.header {
-  background: linear-gradient(135deg, #0a0f18 0%, #1a1f28 100%);
-  color: white;
-  padding: 20px;
-  position: sticky;
-  top: 0;
-  z-index: 100;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-}
-
-.header h1 {
-  font-size: 20px;
-  margin-bottom: 3px;
-}
-
-.header p {
-  font-size: 13px;
-  opacity: 0.9;
-  color: #C9A84C;
-}
-
-/* Tab Content */
-.tab-content {
-  display: none;
-  animation: fadeIn 0.3s;
-}
-
-.tab-content.active {
-  display: block;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Bottom Navigation */
-.bottom-nav {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: white;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-  z-index: 1000;
-  padding: 8px 0 8px 0;
-  padding-bottom: max(8px, env(safe-area-inset-bottom));
-}
-
-.nav-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  padding: 8px 0;
-  cursor: pointer;
-  transition: all 0.2s;
-  border: none;
-  background: none;
-  color: #999;
-  position: relative;
-}
-
-.nav-item::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 3px;
-  background: transparent;
-  border-radius: 0 0 3px 3px;
-  transition: all 0.2s;
-}
-
-.nav-item.active::before {
-  background: #C9A84C;
-}
-
-.nav-item.active {
-  color: #C9A84C;
-}
-
-.nav-icon {
-  font-size: 22px;
-  filter: grayscale(100%);
-  opacity: 0.6;
-  transition: all 0.2s;
-}
-
-.nav-item.active .nav-icon {
-  filter: grayscale(0%);
-  opacity: 1;
-  transform: scale(1.1);
-}
-
-.nav-label {
-  font-size: 11px;
-  font-weight: 600;
-}
-
-/* Dashboard Stats */
-.dashboard {
-  padding: 20px;
-}
-
-.stats-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-  margin-bottom: 25px;
-}
-
-.stat-card {
-  background: white;
-  padding: 20px;
-  border-radius: 16px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
-
-.stat-card.highlight {
-  background: linear-gradient(135deg, #0a0f18 0%, #1a1f28 100%);
-  color: white;
-}
-
-.stat-label {
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 8px;
-  opacity: 0.8;
-  color: #C9A84C;
-}
-
-.stat-card.highlight .stat-label {
-  color: #C9A84C;
-}
-
-.stat-value {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-
-.stat-sub {
-  font-size: 12px;
-  opacity: 0.7;
-}
-
-.progress-bar {
-  height: 6px;
-  background: rgba(0,0,0,0.1);
-  border-radius: 3px;
-  margin-top: 10px;
-  overflow: hidden;
-}
-
-.progress-fill {
-  height: 100%;
-  background: white;
-  border-radius: 3px;
-  transition: width 0.3s;
-}
-
-.stat-card:not(.highlight) .progress-fill {
-  background: #C9A84C;
-}
-
-/* Section Header */
-.section-header {
-  padding: 15px 20px;
-  background: white;
-  margin-bottom: 2px;
-  font-weight: 700;
-  font-size: 14px;
-  color: #333;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-/* Week Card */
-.week-card {
-  background: white;
-  margin-bottom: 15px;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
-
-.week-header {
-  background: #0a0f18;
-  color: white;
-  padding: 16px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  cursor: pointer;
-  user-select: none;
-}
-
-.week-header:active {
-  background: #1a1f28;
-}
-
-.week-info h3 {
-  font-size: 16px;
-  margin-bottom: 3px;
-}
-
-.week-info p {
-  font-size: 12px;
-  opacity: 0.8;
-}
-
-.week-total {
-  text-align: right;
-}
-
-.week-amount {
-  font-size: 22px;
-  font-weight: 700;
-}
-
-.week-meta {
-  font-size: 11px;
-  opacity: 0.8;
-}
-
-.chevron {
-  font-size: 18px;
-  transition: transform 0.3s;
-  margin-left: 10px;
-}
-
-.chevron.rotated {
-  transform: rotate(180deg);
-}
-
-.week-content {
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease;
-}
-
-.week-content.expanded {
-  max-height: 5000px;
-}
-
-/* Day Card */
-.day-card {
-  padding: 20px;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.day-card:last-child {
-  border-bottom: none;
-}
-
-.day-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.day-title {
-  font-size: 16px;
-  font-weight: 700;
-  color: #333;
-}
-
-.badge-today {
-  background: #4CAF50;
-  color: white;
-  padding: 3px 10px;
-  border-radius: 10px;
-  font-size: 10px;
-  font-weight: 700;
-  margin-left: 8px;
-}
-
-.day-date {
-  font-size: 12px;
-  color: #999;
-}
-
-.toggle-btn {
-  background: #4CAF50;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 16px;
-  font-size: 12px;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-.toggle-btn.closed {
-  background: #ddd;
-  color: #666;
-}
-
-.day-fields {
-  display: grid;
-  gap: 12px;
-}
-
-.field-label {
-  font-size: 11px;
-  font-weight: 600;
-  color: #666;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 6px;
-}
-
-.field-input {
-  width: 100%;
-  padding: 12px;
-  border: 2px solid #e0e0e0;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-  background: #fafafa;
-}
-
-.field-input:focus {
-  outline: none;
-  border-color: #C9A84C;
-  background: white;
-}
-
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 8px;
-}
-
-.team-btn {
-  padding: 12px;
-  border: 2px solid #e0e0e0;
-  border-radius: 10px;
-  background: white;
-  font-size: 13px;
-  font-weight: 600;
-  cursor: pointer;
-  color: #666;
-}
-
-.team-btn.active {
-  background: #C9A84C;
-  border-color: #C9A84C;
-  color: white;
-}
-
-.score {
-  text-align: center;
-  padding: 10px;
-  border-radius: 10px;
-  font-weight: 700;
-  font-size: 13px;
-  margin-top: 12px;
-}
-
-.score-excelente { background: #4CAF50; color: white; }
-.score-bueno { background: #2196F3; color: white; }
-.score-regular { background: #FFC107; color: #333; }
-.score-bajo { background: #D32F2F; color: white; }
-
-/* Payroll Cards */
-.payroll-container {
-  padding: 20px;
-}
-
-.payroll-card {
-  background: linear-gradient(135deg, #0a0f18 0%, #1a1f28 100%);
-  color: white;
-  padding: 20px;
-  border-radius: 16px;
-  margin-bottom: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-.payroll-card h3 {
-  font-size: 18px;
-  margin-bottom: 15px;
-  opacity: 0.9;
-  color: #C9A84C;
-}
-
-.payroll-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
-}
-
-.payroll-row:last-child {
-  border: none;
-}
-
-.payroll-row.editable {
-  cursor: pointer;
-}
-
-.payroll-row.editable .payroll-value {
-  text-decoration: underline;
-}
-
-.payroll-row.total {
-  font-size: 20px;
-  font-weight: 700;
-  margin-top: 10px;
-}
-
-.payroll-total-card {
-  background: #f0f0f0;
-  color: #333;
-  padding: 20px;
-  border-radius: 16px;
-  margin-top: 20px;
-}
-
-.payroll-total-row {
-  display: flex;
-  justify-content: space-between;
-  font-size: 22px;
-  font-weight: 700;
-}
-
-.hint {
-  text-align: center;
-  padding: 12px;
-  background: rgba(201, 168, 76, 0.1);
-  border-radius: 10px;
-  font-size: 12px;
-  color: #C9A84C;
-  font-weight: 600;
-  margin-top: 15px;
-}
-
-/* Settings */
-.settings-container {
-  padding: 20px;
-}
-
-.settings-group {
-  background: white;
-  border-radius: 16px;
-  padding: 20px;
-  margin-bottom: 15px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
-
-.settings-group h3 {
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  color: #666;
-  margin-bottom: 15px;
-}
-
-.settings-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 0;
-  border-bottom: 1px solid #f0f0f0;
-}
-
-.settings-item:last-child {
-  border: none;
-}
-
-.settings-label {
-  font-size: 15px;
-  font-weight: 600;
-  color: #333;
-}
-
-.settings-value {
-  font-size: 14px;
-  color: #C9A84C;
-  font-weight: 600;
-}
-
-.btn {
-  width: 100%;
-  padding: 15px;
-  border: none;
-  border-radius: 12px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  margin: 10px 0;
-}
-
-.btn-primary { background: #4CAF50; color: white; }
-.btn-secondary { background: #2196F3; color: white; }
-.btn-danger { background: #f44336; color: white; }
-
-.container {
-  padding: 0 0 20px 0;
-}
-
-
-/* Charts */
-.chart-container {
-  padding: 20px;
-}
-
-.chart-card {
-  background: white;
-  border-radius: 16px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
-
-.chart-card h3 {
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  color: #333;
-}
-
-.bar-chart {
-  display: flex;
-  align-items: flex-end;
-  gap: 8px;
-  height: 200px;
-  padding: 10px 0;
-}
-
-.bar {
-  flex: 1;
-  background: linear-gradient(135deg, #C9A84C 0%, #d4b865 100%);
-  border-radius: 8px 8px 0 0;
-  position: relative;
-  min-height: 10px;
-  transition: all 0.3s;
-}
-
-.bar:hover {
-  opacity: 0.8;
-}
-
-.bar-label {
-  position: absolute;
-  bottom: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 10px;
-  font-weight: 600;
-  color: #666;
-  white-space: nowrap;
-}
-
-.bar-value {
-  position: absolute;
-  top: -25px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 11px;
-  font-weight: 700;
-  color: #0a0f18;
-  white-space: nowrap;
-}
-
-.line-chart {
-  height: 180px;
-  position: relative;
-  margin: 20px 0;
-}
-
-.line-path {
-  stroke: #C9A84C;
-  stroke-width: 3;
-  fill: none;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.line-area {
-  fill: url(#gradient);
-  opacity: 0.2;
-}
-
-/* Goals */
-.goals-container {
-  padding: 20px;
-}
-
-.goal-card {
-  background: white;
-  border-radius: 16px;
-  padding: 20px;
-  margin-bottom: 15px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
-
-.goal-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 15px;
-}
-
-.goal-title {
-  font-size: 16px;
-  font-weight: 700;
-  color: #333;
-}
-
-.goal-edit {
-  background: none;
-  border: none;
-  color: #C9A84C;
-  font-size: 20px;
-  cursor: pointer;
-  padding: 5px;
-}
-
-.goal-input-group {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-  margin-bottom: 15px;
-}
-
-.goal-input {
-  padding: 12px;
-  border: 2px solid #e0e0e0;
-  border-radius: 10px;
-  font-size: 16px;
-  font-weight: 600;
-  text-align: center;
-}
-
-.goal-input:focus {
-  outline: none;
-  border-color: #C9A84C;
-}
-
-.goal-progress {
-  margin-top: 10px;
-}
-
-.goal-progress-bar {
-  height: 10px;
-  background: #f0f0f0;
-  border-radius: 5px;
-  overflow: hidden;
-  margin-bottom: 8px;
-}
-
-.goal-progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #4CAF50 0%, #8BC34A 100%);
-  border-radius: 5px;
-  transition: width 0.3s;
-}
-
-.goal-progress-fill.warning {
-  background: linear-gradient(90deg, #FFC107 0%, #FFD54F 100%);
-}
-
-.goal-progress-fill.danger {
-  background: linear-gradient(90deg, #D32F2F 0%, #F44336 100%);
-}
-
-.goal-stats {
-  display: flex;
-  justify-content: space-between;
-  font-size: 12px;
-  color: #666;
-}
-
-.goal-stat-value {
-  font-weight: 700;
-  color: #C9A84C;
-}
-
-/* Calculator */
-.calc-container {
-  padding: 20px;
-  max-width: 400px;
-  margin: 0 auto;
-}
-
-.calc-display {
-  background: linear-gradient(135deg, #0a0f18 0%, #1a1f28 100%);
-  color: white;
-  padding: 30px 20px;
-  border-radius: 16px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-}
-
-.calc-operation {
-  font-size: 14px;
-  color: #C9A84C;
-  margin-bottom: 8px;
-  min-height: 20px;
-}
-
-.calc-result {
-  font-size: 42px;
-  font-weight: 700;
-  text-align: right;
-}
-
-.calc-buttons {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 12px;
-}
-
-.calc-btn {
-  aspect-ratio: 1;
-  border: none;
-  border-radius: 16px;
-  font-size: 24px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-}
-
-.calc-btn:active {
-  transform: scale(0.95);
-}
-
-.calc-btn-number {
-  background: white;
-  color: #333;
-}
-
-.calc-btn-operator {
-  background: #C9A84C;
-  color: white;
-}
-
-.calc-btn-clear {
-  background: #D32F2F;
-  color: white;
-}
-
-.calc-btn-equals {
-  background: #4CAF50;
-  color: white;
-  grid-column: span 2;
-}
-
-.calc-presets {
-  background: white;
-  border-radius: 16px;
-  padding: 20px;
-  margin-top: 20px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
-}
-
-.calc-presets h3 {
-  font-size: 14px;
-  font-weight: 700;
-  margin-bottom: 12px;
-  color: #333;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-
-.preset-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-}
-
-.preset-btn {
-  padding: 12px;
-  border: 2px solid #e0e0e0;
-  border-radius: 10px;
-  background: white;
-  font-size: 13px;
-  font-weight: 600;
-  color: #333;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.preset-btn:active {
-  background: #C9A84C;
-  border-color: #C9A84C;
-  color: white;
-}
-
-.preset-label {
-  display: block;
-  font-size: 10px;
-  color: #999;
-  margin-top: 3px;
-}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#1a202c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Finanzas">
+    <title>Control Financiero - Juan</title>
+    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIkNvbnRyb2wgRmluYW5jaWVybyIsCiAgInNob3J0X25hbWUiOiAiRmluYW56YXMiLAogICJzdGFydF91cmwiOiAiLiIsCiAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsCiAgImJhY2tncm91bmRfY29sb3IiOiAiIzFhMjAyYyIsCiAgInRoZW1lX2NvbG9yIjogIiMxYTIwMmMiLAogICJpY29ucyI6IFt7CiAgICAic3JjIjogImRhdGE6aW1hZ2Uvc3ZnK3htbCwlM0NzdmcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJyB2aWV3Qm94PScwIDAgMTAwIDEwMCclM0UlM0NyZWN0IGZpbGw9JyUyMzFhMjAyYycgd2lkdGg9JzEwMCcgaGVpZ2h0PScxMDAnLyUzRSUzQ3RleHQgeD0nNTAlMjUnIHk9JzUwJTI1JyBmb250LXNpemU9JzUwJyB0ZXh0LWFuY2hvcj0nbWlkZGxlJyBkb21pbmFudC1iYXNlbGluZT0nbWlkZGxlJyBmaWxsPSclMjNmZmYnJTNFJUYwJTlGJTkyJUIwJTNDL3RleHQlM0UlM0Mvc3ZnJTNFIiwKICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiLAogICAgInNpemVzIjogIjUxMng1MTIiCiAgfV0KfQ==">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        :root {
+            --bg-primary: #f7f9fc;
+            --bg-secondary: #ffffff;
+            --bg-tertiary: #f1f3f6;
+            --text-primary: #1a202c;
+            --text-secondary: #4a5568;
+            --text-tertiary: #718096;
+            --border: #e2e8f0;
+            --green: #10b981;
+            --red: #ef4444;
+            --blue: #3b82f6;
+            --orange: #f59e0b;
+            --accent: #1a202c;
+            --shadow: rgba(0,0,0,0.08);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            padding-bottom: 80px;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        .app-header {
+            background: var(--bg-secondary);
+            padding: 16px 20px;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            flex: 1;
+        }
+
+        .header-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        .header-selects {
+            display: flex;
+            gap: 8px;
+        }
+        
+        .reset-btn {
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--red);
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        
+        .reset-btn:active {
+            background: var(--bg-tertiary);
+        }
+
+        .year-select, .month-select {
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* Content */
+        .app-content {
+            padding: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+
+        /* Cards */
+        .card {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 16px;
+            margin-bottom: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .card-header span:last-child {
+            font-size: 28px;
+            opacity: 0.5;
+            font-weight: 300;
+        }
+
+        .card-title {
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .card-value {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .positive { color: var(--green); }
+        .negative { color: var(--red); }
+        .neutral { color: var(--blue); }
+        .warning { color: var(--orange); }
+
+        .card-subtitle {
+            font-size: 13px;
+            color: var(--text-tertiary);
+            margin-top: 4px;
+        }
+
+        /* Stats Grid */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        /* Action Button */
+        .fab {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            background: var(--accent);
+            color: white;
+            border: none;
+            box-shadow: 0 4px 12px var(--shadow);
+            font-size: 24px;
+            cursor: pointer;
+            z-index: 50;
+            transition: transform 0.2s;
+        }
+
+        .fab:active {
+            transform: scale(0.95);
+        }
+
+        /* Items List */
+        .item {
+            background: var(--bg-tertiary);
+            padding: 14px;
+            border-radius: 10px;
+            margin-bottom: 8px;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .item-info {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+
+        .item-name {
+            font-weight: 600;
+            font-size: 15px;
+            color: var(--text-primary);
+        }
+
+        .item-date {
+            font-size: 13px;
+            color: var(--text-tertiary);
+        }
+
+        .item-right {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .item-amount {
+            font-size: 16px;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .delete-btn {
+            background: transparent;
+            border: none;
+            color: var(--red);
+            font-size: 20px;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        /* Empty State */
+        .empty {
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-tertiary);
+        }
+
+        .empty-icon {
+            font-size: 48px;
+            margin-bottom: 12px;
+            opacity: 0.5;
+        }
+
+        /* Modal */
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0,0,0,0.5);
+            display: none;
+            align-items: flex-end;
+            z-index: 200;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-content {
+            background: var(--bg-secondary);
+            border-radius: 20px 20px 0 0;
+            width: 100%;
+            max-height: 80vh;
+            overflow-y: auto;
+            padding: 24px;
+            animation: slideUp 0.3s ease;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(100%); }
+            to { transform: translateY(0); }
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .modal-title {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .close-btn {
+            background: transparent;
+            border: none;
+            font-size: 28px;
+            color: var(--text-tertiary);
+            cursor: pointer;
+        }
+
+        /* Form */
+        .form-group {
+            margin-bottom: 16px;
+        }
+
+        .form-label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            font-size: 16px;
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: var(--accent);
+        }
+
+        .btn-primary {
+            width: 100%;
+            padding: 16px;
+            background: var(--accent);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 8px;
+        }
+
+        .btn-primary:active {
+            opacity: 0.8;
+        }
+
+        /* Progress Bar */
+        .progress-bar {
+            background: var(--bg-tertiary);
+            height: 8px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 12px;
+        }
+
+        .progress-fill {
+            height: 100%;
+            border-radius: 10px;
+            transition: width 0.5s ease;
+        }
+
+        .progress-text {
+            font-size: 13px;
+            color: var(--text-tertiary);
+            margin-top: 8px;
+        }
+
+        /* Bottom Navigation */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border);
+            display: flex;
+            justify-content: space-around;
+            padding: 8px 0 max(8px, env(safe-area-inset-bottom));
+            z-index: 100;
+        }
+
+        .nav-item {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            padding: 8px;
+            background: transparent;
+            border: none;
+            color: var(--text-tertiary);
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .nav-item.active {
+            color: var(--accent);
+        }
+
+        .nav-icon {
+            font-size: 22px;
+            font-weight: 300;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-icon svg {
+            width: 24px;
+            height: 24px;
+        }
+
+        .nav-label {
+            font-size: 11px;
+            font-weight: 600;
+        }
+
+        /* Year Selector */
+        .year-selector {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .month-btn {
+            padding: 12px;
+            background: var(--bg-tertiary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-secondary);
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .month-btn.active {
+            background: var(--accent);
+            color: white;
+            border-color: var(--accent);
+        }
+
+        .month-btn.has-data {
+            border-color: var(--green);
+        }
+
+        /* Summary Section */
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .summary-row:last-child {
+            border-bottom: none;
+        }
+
+        .summary-label {
+            font-size: 14px;
+            color: var(--text-secondary);
+        }
+
+        .summary-value {
+            font-size: 14px;
+            font-weight: 700;
+        }
+    </style>
 </head>
 <body>
-
-<div class="header">
-  <h1>📊 Tracker Andrade</h1>
-  <p id="mesActual">Marzo 2026</p>
-  <select id="mesSelector" onchange="cambiarMes()" style="margin-top: 10px; padding: 8px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1); color: white; font-size: 13px; cursor: pointer; width: 100%;">
-    <option value="0">Enero</option>
-    <option value="1">Febrero</option>
-    <option value="2">Marzo</option>
-    <option value="3">Abril</option>
-    <option value="4">Mayo</option>
-    <option value="5">Junio</option>
-    <option value="6">Julio</option>
-    <option value="7">Agosto</option>
-    <option value="8">Septiembre</option>
-    <option value="9">Octubre</option>
-    <option value="10">Noviembre</option>
-    <option value="11">Diciembre</option>
-  </select>
-</div>
-
-<!-- TAB 1: RESUMEN -->
-<div id="tab-resumen" class="tab-content active">
-  <div class="dashboard">
-    <div class="stats-grid">
-      <div class="stat-card highlight">
-        <div class="stat-label">💰 Ingreso</div>
-        <div class="stat-value" id="ingresoTotal">$0</div>
-        <div class="progress-bar">
-          <div class="progress-fill" id="progressIngreso" style="width: 0%"></div>
+    <!-- Header -->
+    <div class="app-header">
+        <div class="header-content">
+            <div class="header-left">
+                <div class="header-title" id="headerTitle">Resumen</div>
+                <button class="reset-btn" onclick="resetearApp()">🔄</button>
+            </div>
+            <div class="header-selects">
+                <select class="year-select" id="yearSelect"></select>
+                <select class="month-select" id="monthSelect"></select>
+            </div>
         </div>
-        <div class="stat-sub" id="metaIngreso">Meta: $1,680</div>
-      </div>
-      
-      <div class="stat-card">
-        <div class="stat-label">📊 Ganancia</div>
-        <div class="stat-value" id="gananciaTotal">$0</div>
-        <div class="stat-sub">Neta del mes</div>
-      </div>
-      
-      <div class="stat-card">
-        <div class="stat-label">🔧 Servicios</div>
-        <div class="stat-value" id="serviciosTotal">0</div>
-        <div class="stat-sub" id="promedioServ">0/día</div>
-      </div>
-      
-      <div class="stat-card">
-        <div class="stat-label">💵 Nómina</div>
-        <div class="stat-value" id="nominaTotal">$0</div>
-        <div class="stat-sub" id="pctNomina">0%</div>
-      </div>
     </div>
-    
-    <div class="section-header">📈 Resumen por Semana</div>
-    
-    <div id="resumenSemanas"></div>
-  </div>
-</div>
 
-<!-- TAB 2: DÍAS -->
-<div id="tab-dias" class="tab-content">
-  <div class="container" id="diasContainer">
-    <!-- Semanas se generan aquí -->
-  </div>
-</div>
+    <!-- Content -->
+    <div class="app-content">
+        <!-- Resumen Section -->
+        <div id="resumenSection" class="section active">
+            <div class="stats-grid">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Ingresos</span>
+                        <span>↗</span>
+                    </div>
+                    <div class="card-value positive" id="totalIngresos">$0</div>
+                    <div class="card-subtitle">Este mes</div>
+                </div>
 
-<!-- TAB 3: NÓMINA -->
-<!-- TAB 4: AJUSTES -->
-<div id="tab-ajustes" class="tab-content">
-  <div class="settings-container">
-    <div class="section-header">💰 NÓMINA</div>
-    
-    <div class="payroll-card">
-      <h3>Juan (Supervisor)</h3>
-      <div class="payroll-row">
-        <span>Días trabajados:</span>
-        <span id="juanDias">0</span>
-      </div>
-      <div class="payroll-row editable" onclick="editarSalario('juan')">
-        <span>Pago por día:</span>
-        <span class="payroll-value" id="juanSalario">$30</span>
-      </div>
-      <div class="payroll-row total">
-        <span>Total a pagar:</span>
-        <span id="juanPago">$0</span>
-      </div>
-    </div>
-    
-    <div class="payroll-card">
-      <h3>René (Operario)</h3>
-      <div class="payroll-row">
-        <span>Días trabajados:</span>
-        <span id="reneDias">0</span>
-      </div>
-      <div class="payroll-row editable" onclick="editarSalario('rene')">
-        <span>Pago por día:</span>
-        <span class="payroll-value" id="reneSalario">$40</span>
-      </div>
-      <div class="payroll-row total">
-        <span>Total a pagar:</span>
-        <span id="renePago">$0</span>
-      </div>
-    </div>
-    
-    <div class="payroll-card">
-      <h3>Daniel (Operario)</h3>
-      <div class="payroll-row">
-        <span>Días trabajados:</span>
-        <span id="danielDias">0</span>
-      </div>
-      <div class="payroll-row editable" onclick="editarSalario('daniel')">
-        <span>Pago por día:</span>
-        <span class="payroll-value" id="danielSalario">$40</span>
-      </div>
-      <div class="payroll-row total">
-        <span>Total a pagar:</span>
-        <span id="danielPago">$0</span>
-      </div>
-    </div>
-    
-    <div class="payroll-total-card">
-      <div class="payroll-total-row">
-        <span>Total Nómina:</span>
-        <span id="nominaTotalModal">$0</span>
-      </div>
-    </div>
-    
-    <div class="hint">
-      💡 Toca "Pago por día" para editar salarios
-    </div>
-    
-    <div class="settings-group" style="margin-top: 30px;">
-      <h3>📊 Información del Mes</h3>
-      <div class="settings-item">
-        <span class="settings-label">Días trabajados</span>
-        <span class="settings-value" id="diasTrabajadosSetting">0</span>
-      </div>
-      <div class="settings-item">
-        <span class="settings-label">Promedio diario</span>
-        <span class="settings-value" id="promedioDiarioSetting">$0</span>
-      </div>
-      <div class="settings-item">
-        <span class="settings-label">Mejor día</span>
-        <span class="settings-value" id="mejorDiaSetting">-</span>
-      </div>
-    </div>
-    
-    <div class="settings-group">
-      <h3>💾 Datos</h3>
-      <button class="btn btn-primary" onclick="guardarDatos()">💾 Guardar Datos</button>
-      <button class="btn btn-secondary" onclick="cargarDatos()">📂 Cargar Datos</button>
-      <button class="btn btn-danger" onclick="resetearMes()">🔄 Resetear Mes</button>
-    </div>
-    
-    <div class="settings-group">
-      <h3>ℹ️ Información</h3>
-      <div class="settings-item">
-        <span class="settings-label">Versión</span>
-        <span class="settings-value">2.0</span>
-      </div>
-      <div class="settings-item">
-        <span class="settings-label">Andrade Detailing Studio</span>
-        <span class="settings-value">2026</span>
-      </div>
-    </div>
-    
-    <div class="section-header" style="margin-top: 30px;">🧮 CALCULADORA RÁPIDA</div>
-    
-    <div class="calc-container">
-      <div class="calc-display">
-        <div class="calc-operation" id="calcOperation"></div>
-        <div class="calc-result" id="calcResult">0</div>
-      </div>
-      
-      <div class="calc-buttons">
-        <button class="calc-btn calc-btn-clear" onclick="calcClear()">C</button>
-        <button class="calc-btn calc-btn-operator" onclick="calcOp('/')">/</button>
-        <button class="calc-btn calc-btn-operator" onclick="calcOp('*')">×</button>
-        <button class="calc-btn calc-btn-operator" onclick="calcOp('-')">-</button>
-        
-        <button class="calc-btn calc-btn-number" onclick="calcNum('7')">7</button>
-        <button class="calc-btn calc-btn-number" onclick="calcNum('8')">8</button>
-        <button class="calc-btn calc-btn-number" onclick="calcNum('9')">9</button>
-        <button class="calc-btn calc-btn-operator" onclick="calcOp('+')">+</button>
-        
-        <button class="calc-btn calc-btn-number" onclick="calcNum('4')">4</button>
-        <button class="calc-btn calc-btn-number" onclick="calcNum('5')">5</button>
-        <button class="calc-btn calc-btn-number" onclick="calcNum('6')">6</button>
-        <button class="calc-btn calc-btn-operator" onclick="calcPercent()">%</button>
-        
-        <button class="calc-btn calc-btn-number" onclick="calcNum('1')">1</button>
-        <button class="calc-btn calc-btn-number" onclick="calcNum('2')">2</button>
-        <button class="calc-btn calc-btn-number" onclick="calcNum('3')">3</button>
-        <button class="calc-btn calc-btn-number" onclick="calcNum('.')">.</button>
-        
-        <button class="calc-btn calc-btn-number" onclick="calcNum('0')" style="grid-column: span 2;">0</button>
-        <button class="calc-btn calc-btn-equals" onclick="calcEquals()">=</button>
-      </div>
-      
-      <div class="calc-presets">
-        <h3>⚡ Atajos Rápidos</h3>
-        <div class="preset-grid">
-          <button class="preset-btn" onclick="calcPreset(7.99)">
-            $7.99 <span class="preset-label">Lavado Deluxe</span>
-          </button>
-          <button class="preset-btn" onclick="calcPreset(12.99)">
-            $12.99 <span class="preset-label">Lavado Premium</span>
-          </button>
-          <button class="preset-btn" onclick="calcPreset(20)">
-            $20 <span class="preset-label">Detallado Bronce</span>
-          </button>
-          <button class="preset-btn" onclick="calcPreset(35)">
-            $35 <span class="preset-label">Detallado Plata</span>
-          </button>
-          <button class="preset-btn" onclick="calcPreset(55)">
-            $55 <span class="preset-label">Detallado Oro</span>
-          </button>
-          <button class="preset-btn" onclick="calcPreset(85)">
-            $85 <span class="preset-label">Tapicería</span>
-          </button>
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Gastos</span>
+                        <span>↘</span>
+                    </div>
+                    <div class="card-value negative" id="totalGastos">$0</div>
+                    <div class="card-subtitle">Este mes</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Balance</span>
+                        <span>●</span>
+                    </div>
+                    <div class="card-value neutral" id="balance">$0</div>
+                    <div class="card-subtitle" id="balanceStatus">Neutro</div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Provisiones</span>
+                        <span>▪</span>
+                    </div>
+                    <div class="card-value neutral" id="totalProvisiones">$0</div>
+                    <div class="card-subtitle">Apartado</div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Deudas Totales</span>
+                    <span>◆</span>
+                </div>
+                <div class="card-value warning" id="totalDeudas">$0</div>
+                <div class="card-subtitle">Saldo pendiente</div>
+            </div>
+
+            <div class="card" id="deudaPendienteCard" style="display: none;">
+                <div class="card-header">
+                    <span class="card-title">Por Pagar Este Mes</span>
+                    <span style="font-size: 20px;">⏰</span>
+                </div>
+                <div class="card-value warning" id="totalDeudaPendiente">$0</div>
+                <div class="card-subtitle">Gastos a crédito de meses anteriores</div>
+                <div id="deudaPendienteDetalle" style="margin-top: 12px; font-size: 13px; color: var(--text-tertiary);"></div>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <span class="card-title">Meta de Ahorro</span>
+                    <button style="background: transparent; border: none; font-size: 18px; cursor: pointer;" onclick="editMeta()">✏️</button>
+                </div>
+                <div class="progress-text" id="ahorroProgress">$0 / $0</div>
+                <div class="progress-bar">
+                    <div class="progress-fill positive" id="ahorroBar" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-title" style="margin-bottom: 12px;">Resumen Anual <span id="yearTitle">2026</span></div>
+                <div class="summary-row">
+                    <span class="summary-label">Total Ingresos</span>
+                    <span class="summary-value positive" id="yearIngresos">$0</span>
+                </div>
+                <div class="summary-row">
+                    <span class="summary-label">Total Gastos</span>
+                    <span class="summary-value negative" id="yearGastos">$0</span>
+                </div>
+                <div class="summary-row">
+                    <span class="summary-label">Balance Neto</span>
+                    <span class="summary-value neutral" id="yearBalance">$0</span>
+                </div>
+                <div class="summary-row">
+                    <span class="summary-label">Promedio Mensual</span>
+                    <span class="summary-value neutral" id="yearPromedio">$0</span>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <!-- Ingresos Section -->
+        <div id="ingresosSection" class="section">
+            <div class="stats-grid" style="margin-bottom: 15px;">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Esperados</span>
+                        <span style="font-size: 20px;">📋</span>
+                    </div>
+                    <div class="card-value neutral" id="ingresosEsperados">$0</div>
+                    <div class="card-subtitle">Pendiente cobro</div>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <span class="card-title">Cobrados</span>
+                        <span style="font-size: 20px;">✅</span>
+                    </div>
+                    <div class="card-value positive" id="ingresosCobrados">$0</div>
+                    <div class="card-subtitle">Recibido</div>
+                </div>
+            </div>
+            
+            <div class="card" style="margin-bottom: 15px;">
+                <div class="card-header">
+                    <span class="card-title">Meta de Ingresos</span>
+                    <button style="background: transparent; border: none; font-size: 18px; cursor: pointer;" onclick="editMetaIngresos()">✏️</button>
+                </div>
+                <div class="progress-text" id="ingresosProgress">$0 / $0</div>
+                <div class="progress-bar">
+                    <div class="progress-fill positive" id="ingresosBar" style="width: 0%"></div>
+                </div>
+            </div>
+            <div id="ingresosList"></div>
+        </div>
+
+        <!-- Gastos Section -->
+        <div id="gastosSection" class="section">
+            <div class="card" style="margin-bottom: 15px;">
+                <div class="card-header">
+                    <span class="card-title">Presupuesto de Gastos</span>
+                    <button style="background: transparent; border: none; font-size: 18px; cursor: pointer;" onclick="editMetaGastos()">✏️</button>
+                </div>
+                <div class="progress-text" id="gastosProgress">$0 / $0</div>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="gastosBar" style="width: 0%"></div>
+                </div>
+            </div>
+            <div id="gastosList"></div>
+        </div>
+
+        <!-- Deudas Section -->
+        <div id="deudasSection" class="section">
+            <div id="deudasList"></div>
+        </div>
+
+        <!-- Provisiones Section -->
+        <div id="provisionesSection" class="section">
+            <div class="card" style="margin-bottom: 15px;">
+                <div class="card-header">
+                    <span class="card-title">Total Apartado Este Mes</span>
+                    <span style="font-size: 20px;">💰</span>
+                </div>
+                <div class="card-value neutral" id="provisionesTotalMes">$0</div>
+                <div class="card-subtitle">De <span id="provisionesMetaMes">$0</span> programado</div>
+                <div class="progress-bar" style="margin-top: 12px;">
+                    <div class="progress-fill neutral" id="provisionesMesBar" style="width: 0%"></div>
+                </div>
+            </div>
+            
+            <div class="card" style="margin-bottom: 15px;">
+                <div class="card-header">
+                    <span class="card-title">Categorías de Ahorro</span>
+                    <button class="add-btn" style="padding: 8px 16px; font-size: 13px;" onclick="openConfigProvisiones()">⚙️ Configurar</button>
+                </div>
+            </div>
+            
+            <div id="provisionesCategorias"></div>
+        </div>
+
+        <!-- Año Section -->
+        <div id="añoSection" class="section">
+            <div class="year-selector" id="yearSelector"></div>
+            <div id="monthSummary"></div>
+        </div>
     </div>
-  </div>
-</div>
 
-<!-- TAB 5: GRÁFICAS -->
-<div id="tab-graficas" class="tab-content">
-  <div class="chart-container">
-    <div class="chart-card">
-      <h3>📊 Ingresos por Semana</h3>
-      <div class="bar-chart" id="chartSemanas"></div>
+    <!-- FAB -->
+    <button class="fab" id="fab" onclick="openModal()">+</button>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="modal-title" id="modalTitle">Agregar</div>
+                <button class="close-btn" onclick="closeModal()">×</button>
+            </div>
+            <div id="modalForm"></div>
+        </div>
     </div>
-    
-    <div class="chart-card">
-      <h3>📈 Tendencia del Mes</h3>
-      <svg class="line-chart" id="chartTendencia" viewBox="0 0 300 180">
-        <defs>
-          <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-            <stop offset="0%" style="stop-color:#C9A84C;stop-opacity:0.4" />
-            <stop offset="100%" style="stop-color:#C9A84C;stop-opacity:0" />
-          </linearGradient>
-        </defs>
-      </svg>
-    </div>
-  </div>
-</div>
 
-<!-- TAB 6: METAS -->
-<div id="tab-metas" class="tab-content">
-  <div class="goals-container">
-    <div class="goal-card">
-      <div class="goal-header">
-        <h3 class="goal-title">💰 Meta Mensual</h3>
-        <button class="goal-edit" onclick="editarMeta('mensual')">✏️</button>
-      </div>
-      <div class="goal-input-group">
-        <input type="number" id="metaMensual" class="goal-input" value="1680" 
-               oninput="actualizarMetas()" readonly>
-        <div style="display: flex; align-items: center; justify-content: center; 
-                    font-size: 32px; font-weight: 700; color: #C9A84C;" id="metaMensualActual">$0</div>
-      </div>
-      <div class="goal-progress">
-        <div class="goal-progress-bar">
-          <div class="goal-progress-fill" id="progressMensual" style="width: 0%"></div>
-        </div>
-        <div class="goal-stats">
-          <span>Progreso: <span class="goal-stat-value" id="pctMensual">0%</span></span>
-          <span>Faltan: <span class="goal-stat-value" id="faltaMensual">$0</span></span>
-        </div>
-      </div>
-    </div>
-    
-    <div class="goal-card">
-      <div class="goal-header">
-        <h3 class="goal-title">📅 Meta Semanal</h3>
-        <button class="goal-edit" onclick="editarMeta('semanal')">✏️</button>
-      </div>
-      <div class="goal-input-group">
-        <input type="number" id="metaSemanal" class="goal-input" value="375" 
-               oninput="actualizarMetas()" readonly>
-        <div style="display: flex; align-items: center; justify-content: center; 
-                    font-size: 32px; font-weight: 700; color: #C9A84C;" id="metaSemanalActual">$0</div>
-      </div>
-      <div class="goal-progress">
-        <div class="goal-progress-bar">
-          <div class="goal-progress-fill" id="progressSemanal" style="width: 0%"></div>
-        </div>
-        <div class="goal-stats">
-          <span>Progreso: <span class="goal-stat-value" id="pctSemanal">0%</span></span>
-          <span>Faltan: <span class="goal-stat-value" id="faltaSemanal">$0</span></span>
-        </div>
-      </div>
-    </div>
-    
-    <div class="goal-card">
-      <div class="goal-header">
-        <h3 class="goal-title">☀️ Meta Diaria</h3>
-        <button class="goal-edit" onclick="editarMeta('diaria')">✏️</button>
-      </div>
-      <div class="goal-input-group">
-        <input type="number" id="metaDiaria" class="goal-input" value="56" 
-               oninput="actualizarMetas()" readonly>
-        <div style="display: flex; align-items: center; justify-content: center; 
-                    font-size: 32px; font-weight: 700; color: #C9A84C;" id="metaDiariaActual">$0</div>
-      </div>
-      <div class="goal-progress">
-        <div class="goal-progress-bar">
-          <div class="goal-progress-fill" id="progressDiaria" style="width: 0%"></div>
-        </div>
-        <div class="goal-stats">
-          <span>Hoy: <span class="goal-stat-value" id="hoyIngreso">$0</span></span>
-          <span>Promedio: <span class="goal-stat-value" id="promedioDiario">$0</span></span>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Bottom Navigation -->
-<div class="bottom-nav">
-  <button class="nav-item active" onclick="cambiarTab('resumen')">
-    <div class="nav-icon">📈</div>
-    <div class="nav-label">Resumen</div>
-  </button>
-  <button class="nav-item" onclick="cambiarTab('dias')">
-    <div class="nav-icon">📋</div>
-    <div class="nav-label">Días</div>
-  </button>
-  <button class="nav-item" onclick="cambiarTab('graficas')">
-    <div class="nav-icon">📊</div>
-    <div class="nav-label">Gráficas</div>
-  </button>
-  <button class="nav-item" onclick="cambiarTab('metas')">
-    <div class="nav-icon">🎯</div>
-    <div class="nav-label">Metas</div>
-  </button>
-  <button class="nav-item" onclick="cambiarTab('ajustes')">
-    <div class="nav-icon">⚙️</div>
-    <div class="nav-label">Más</div>
-  </button>
-</div>
-
-<script>
-const DIAS_SEMANA = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
-const MESES = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 
-               'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
-const META_MENSUAL = 1680;
-const META_SEMANAL = 375;
-const META_DIARIA = 56;
-
-let salarios = { juan: 30, rene: 40, daniel: 40 };
-let mesActual = new Date().getMonth(); // Auto-detecta mes actual
-let yearActual = new Date().getFullYear();
-let datos = {};
-let tabActual = 'resumen';
-
-function cambiarMes() {
-  mesActual = parseInt(document.getElementById('mesSelector').value);
-  
-  // Guardar datos del mes anterior antes de cambiar
-  const guardadoActual = localStorage.getItem(`andrade_${yearActual}_${mesActual}`);
-  
-  // Actualizar UI
-  actualizarHeaderMes();
-  
-  // Cargar datos del nuevo mes o inicializar
-  const guardado = localStorage.getItem(`andrade_${yearActual}_${mesActual}`);
-  if (guardado) {
-    datos = JSON.parse(guardado);
-  } else {
-    inicializarMes();
-  }
-  
-  generarDias();
-  generarResumenSemanas();
-}
-
-function actualizarHeaderMes() {
-  document.getElementById('mesActual').textContent = `${MESES[mesActual]} ${yearActual}`;
-}
-
-function cargarSalarios() {
-  const guardados = localStorage.getItem('andrade_salarios');
-  if (guardados) {
-    salarios = JSON.parse(guardados);
-  }
-  actualizarSalariosUI();
-}
-
-function guardarSalarios() {
-  localStorage.setItem('andrade_salarios', JSON.stringify(salarios));
-}
-
-function actualizarSalariosUI() {
-  document.getElementById('juanSalario').textContent = `$${salarios.juan}`;
-  document.getElementById('reneSalario').textContent = `$${salarios.rene}`;
-  document.getElementById('danielSalario').textContent = `$${salarios.daniel}`;
-}
-
-function editarSalario(persona) {
-  const nombres = { juan: 'Juan', rene: 'René', daniel: 'Daniel' };
-  const nuevoSalario = prompt(`Nuevo salario por día para ${nombres[persona]}:`, salarios[persona]);
-  
-  if (nuevoSalario !== null && nuevoSalario !== '') {
-    const valor = parseFloat(nuevoSalario);
-    if (!isNaN(valor) && valor > 0) {
-      salarios[persona] = valor;
-      guardarSalarios();
-      actualizarSalariosUI();
-      actualizarTotales();
-      alert(`✅ Salario de ${nombres[persona]} actualizado a $${valor}/día`);
-    } else {
-      alert('⚠️ Ingresa un número válido');
-    }
-  }
-}
-
-function cambiarTab(tab) {
-  tabActual = tab;
-  
-  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
-  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
-  
-  document.getElementById(`tab-${tab}`).classList.add('active');
-  
-  // Activate the clicked nav item
-  const tabs = ['resumen', 'dias', 'graficas', 'metas', 'ajustes'];
-  const index = tabs.indexOf(tab);
-  if (index !== -1) {
-    document.querySelectorAll('.nav-item')[index].classList.add('active');
-  }
-  
-  // Update content when switching tabs
-  if (tab === 'resumen') {
-    generarResumenSemanas();
-  } else if (tab === 'graficas') {
-    generarGraficas();
-  } else if (tab === 'metas') {
-    actualizarMetas();
-  }
-}
-
-function inicializarMes() {
-  const diasEnMes = new Date(yearActual, mesActual + 1, 0).getDate();
-  datos = {};
-  
-  for (let dia = 1; dia <= diasEnMes; dia++) {
-    const fecha = new Date(yearActual, mesActual, dia);
-    datos[dia] = {
-      abierto: fecha.getDay() !== 0,
-      ingreso: 0,
-      gastos: 0,
-      servicios: 0,
-      juan: false,
-      rene: false,
-      daniel: false
-    };
-  }
-}
-
-function generarDias() {
-  const container = document.getElementById('diasContainer');
-  container.innerHTML = '';
-  
-  const diasEnMes = new Date(yearActual, mesActual + 1, 0).getDate();
-  const hoy = new Date();
-  const diaHoy = hoy.getDate();
-  const mesHoy = hoy.getMonth();
-  const yearHoy = hoy.getFullYear();
-  
-  let semanaActual = null;
-  let weekCard, weekContent;
-  
-  for (let dia = 1; dia <= diasEnMes; dia++) {
-    const fecha = new Date(yearActual, mesActual, dia);
-    const numSemana = Math.ceil(dia / 7);
-    
-    if (numSemana !== semanaActual) {
-      semanaActual = numSemana;
-      const primerDia = ((numSemana - 1) * 7) + 1;
-      const ultimoDia = Math.min(numSemana * 7, diasEnMes);
-      
-      weekCard = document.createElement('div');
-      weekCard.className = 'week-card';
-      
-      weekCard.innerHTML = `
-        <div class="week-header" onclick="toggleSemana(${numSemana})">
-          <div class="week-info">
-            <h3>Semana ${numSemana}</h3>
-            <p>${primerDia}-${ultimoDia} ${MESES[mesActual].substring(0, 3)}</p>
-          </div>
-          <div class="week-total">
-            <div class="week-amount" id="total_semana_${numSemana}">$0</div>
-            <div class="week-meta">Meta $${META_SEMANAL}</div>
-          </div>
-          <span class="chevron" id="chevron_${numSemana}">▼</span>
-        </div>
-        <div class="week-content" id="content_semana_${numSemana}"></div>
-      `;
-      
-      container.appendChild(weekCard);
-      weekContent = weekCard.querySelector('.week-content');
-    }
-    
-    const esHoy = mesHoy === mesActual && dia === diaHoy && yearHoy === yearActual;
-    const data = datos[dia];
-    const nombreDia = DIAS_SEMANA[fecha.getDay()];
-    
-    const dayCard = document.createElement('div');
-    dayCard.className = 'day-card';
-    dayCard.id = `dia_${dia}`;
-    
-    dayCard.innerHTML = `
-      <div class="day-header">
-        <div>
-          <span class="day-title">${nombreDia} ${dia}</span>
-          ${esHoy ? '<span class="badge-today">HOY</span>' : ''}
-          <div class="day-date">${fecha.toLocaleDateString('es-ES', {month: 'long', day: 'numeric'})}</div>
-        </div>
-        <button class="toggle-btn ${data.abierto ? '' : 'closed'}" onclick="toggleDia(${dia})">
-          ${data.abierto ? '✓ Abierto' : '✕ Cerrado'}
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+        <button class="nav-item active" onclick="switchSection('resumen')">
+            <span class="nav-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+            </span>
+            <span class="nav-label">Resumen</span>
         </button>
-      </div>
-      
-      <div class="day-fields">
-        <div>
-          <div class="field-label">💰 Ingreso</div>
-          <input type="number" class="field-input" id="ingreso_${dia}" 
-                 value="${data.ingreso || ''}" placeholder="$0.00" step="0.01"
-                 oninput="actualizarDia(${dia})">
-        </div>
+        <button class="nav-item" onclick="switchSection('ingresos')">
+            <span class="nav-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="19" x2="12" y2="5"></line>
+                    <polyline points="5 12 12 5 19 12"></polyline>
+                </svg>
+            </span>
+            <span class="nav-label">Ingresos</span>
+        </button>
+        <button class="nav-item" onclick="switchSection('gastos')">
+            <span class="nav-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <polyline points="19 12 12 19 5 12"></polyline>
+                </svg>
+            </span>
+            <span class="nav-label">Gastos</span>
+        </button>
+        <button class="nav-item" onclick="switchSection('provisiones')">
+            <span class="nav-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                </svg>
+            </span>
+            <span class="nav-label">Provisiones</span>
+        </button>
+        <button class="nav-item" onclick="switchSection('deudas')">
+            <span class="nav-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect>
+                    <line x1="1" y1="10" x2="23" y2="10"></line>
+                </svg>
+            </span>
+            <span class="nav-label">Deudas</span>
+        </button>
+        <button class="nav-item" onclick="switchSection('año')">
+            <span class="nav-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                </svg>
+            </span>
+            <span class="nav-label">Año</span>
+        </button>
+    </nav>
+
+    <script>
+        // State
+        let currentYear = 2026;
+        let currentMonth = '2026-03';
+        let currentSection = 'resumen';
         
-        <div>
-          <div class="field-label">📉 Gastos</div>
-          <input type="number" class="field-input" id="gastos_${dia}" 
-                 value="${data.gastos || ''}" placeholder="$0.00" step="0.01"
-                 oninput="actualizarDia(${dia})">
-        </div>
-        
-        <div>
-          <div class="field-label">🔧 Servicios</div>
-          <input type="number" class="field-input" id="servicios_${dia}" 
-                 value="${data.servicios || ''}" placeholder="0"
-                 oninput="actualizarDia(${dia})">
-        </div>
-        
-        <div>
-          <div class="field-label">👥 Quién trabajó</div>
-          <div class="team-grid">
-            <button class="team-btn ${data.juan ? 'active' : ''}" id="juan_${dia}" onclick="toggleTeam(${dia}, 'juan')">Juan</button>
-            <button class="team-btn ${data.rene ? 'active' : ''}" id="rene_${dia}" onclick="toggleTeam(${dia}, 'rene')">René</button>
-            <button class="team-btn ${data.daniel ? 'active' : ''}" id="daniel_${dia}" onclick="toggleTeam(${dia}, 'daniel')">Daniel</button>
-          </div>
-        </div>
-        
-        <div class="score" id="score_${dia}">-</div>
-      </div>
-    `;
-    
-    weekContent.appendChild(dayCard);
-    actualizarScore(dia);
-  }
-  
-  actualizarTotales();
-}
+        const monthNames = {
+            '01': 'Enero', '02': 'Febrero', '03': 'Marzo', '04': 'Abril',
+            '05': 'Mayo', '06': 'Junio', '07': 'Julio', '08': 'Agosto',
+            '09': 'Septiembre', '10': 'Octubre', '11': 'Noviembre', '12': 'Diciembre'
+        };
 
-function generarResumenSemanas() {
-  const container = document.getElementById('resumenSemanas');
-  container.innerHTML = '';
-  
-  const diasEnMes = new Date(yearActual, mesActual + 1, 0).getDate();
-  const numSemanas = Math.ceil(diasEnMes / 7);
-  const semanas = {};
-  
-  Object.keys(datos).forEach(dia => {
-    const numSemana = Math.ceil(parseInt(dia) / 7);
-    if (!semanas[numSemana]) semanas[numSemana] = 0;
-    if (datos[dia].abierto) {
-      semanas[numSemana] += datos[dia].ingreso;
-    }
-  });
-  
-  for (let s = 1; s <= numSemanas; s++) {
-    const total = semanas[s] || 0;
-    const pct = (total / META_SEMANAL * 100).toFixed(0);
-    
-    const card = document.createElement('div');
-    card.className = 'week-card';
-    card.style.marginBottom = '10px';
-    card.innerHTML = `
-      <div class="week-header" style="background: ${total >= META_SEMANAL ? '#4CAF50' : total >= META_SEMANAL * 0.7 ? '#C9A84C' : '#0a0f18'}">
-        <div class="week-info">
-          <h3>Semana ${s}</h3>
-        </div>
-        <div class="week-total">
-          <div class="week-amount">$${total.toFixed(0)}</div>
-          <div class="week-meta">${pct}% de meta</div>
-        </div>
-      </div>
-    `;
-    container.appendChild(card);
-  }
-}
+        // Get available years from localStorage
+        function getAvailableYears() {
+            const years = new Set();
+            years.add(2026); // Default year
+            
+            // Check localStorage for data
+            for (let i = 0; i < localStorage.length; i++) {
+                const key = localStorage.key(i);
+                if (key && key.startsWith('fin_')) {
+                    const year = parseInt(key.split('_')[1].split('-')[0]);
+                    if (year >= 2026 && year <= 2050) {
+                        years.add(year);
+                    }
+                }
+            }
+            
+            return Array.from(years).sort();
+        }
 
-function toggleSemana(numSemana) {
-  const content = document.getElementById(`content_semana_${numSemana}`);
-  const chevron = document.getElementById(`chevron_${numSemana}`);
-  
-  if (content.classList.contains('expanded')) {
-    content.classList.remove('expanded');
-    chevron.classList.remove('rotated');
-  } else {
-    content.classList.add('expanded');
-    chevron.classList.add('rotated');
-  }
-}
+        // Generate months for current year
+        function getMonthsForYear(year) {
+            const months = [];
+            for (let i = 1; i <= 12; i++) {
+                const monthNum = i.toString().padStart(2, '0');
+                months.push(`${year}-${monthNum}`);
+            }
+            return months;
+        }
 
-function toggleDia(dia) {
-  datos[dia].abierto = !datos[dia].abierto;
-  const btn = document.querySelector(`#dia_${dia} .toggle-btn`);
-  btn.textContent = datos[dia].abierto ? '✓ Abierto' : '✕ Cerrado';
-  btn.className = `toggle-btn ${datos[dia].abierto ? '' : 'closed'}`;
-  actualizarTotales();
-}
+        function resetearApp() {
+            const confirmar = confirm('⚠️ ADVERTENCIA\n\n¿Estás seguro de reiniciar la app?\n\nEsto borrará:\n• Todos los ingresos\n• Todos los gastos\n• Todas las deudas\n• Todas las provisiones\n• Todas las metas\n• Todas las configuraciones\n\nEsta acción NO se puede deshacer.');
+            
+            if (!confirmar) return;
+            
+            const confirmar2 = confirm('⚠️ ÚLTIMA CONFIRMACIÓN\n\n¿Realmente quieres borrar TODOS los datos?\n\nEsto dejará la app completamente vacía.');
+            
+            if (!confirmar2) return;
+            
+            // Borrar TODO el localStorage
+            localStorage.clear();
+            
+            // Recargar página
+            alert('✅ App reiniciada\n\nTodos los datos han sido borrados.');
+            location.reload();
+        }
 
-function toggleTeam(dia, persona) {
-  datos[dia][persona] = !datos[dia][persona];
-  const btn = document.getElementById(`${persona}_${dia}`);
-  btn.className = `team-btn ${datos[dia][persona] ? 'active' : ''}`;
-  actualizarTotales();
-}
+        // Initialize
+        function init() {
+            setupYearSelect();
+            setupMonthSelect();
+            setupYearSelector();
+            updateUI();
+        }
 
-function actualizarDia(dia) {
-  datos[dia].ingreso = parseFloat(document.getElementById(`ingreso_${dia}`).value) || 0;
-  datos[dia].gastos = parseFloat(document.getElementById(`gastos_${dia}`).value) || 0;
-  datos[dia].servicios = parseInt(document.getElementById(`servicios_${dia}`).value) || 0;
-  actualizarScore(dia);
-  actualizarTotales();
-}
+        function setupYearSelect() {
+            const select = document.getElementById('yearSelect');
+            const years = getAvailableYears();
+            
+            // Add next year option
+            const maxYear = Math.max(...years);
+            if (!years.includes(maxYear + 1)) {
+                years.push(maxYear + 1);
+            }
+            
+            select.innerHTML = '';
+            years.forEach(year => {
+                const option = document.createElement('option');
+                option.value = year;
+                option.textContent = year;
+                select.appendChild(option);
+            });
+            
+            select.value = currentYear;
+            select.addEventListener('change', (e) => {
+                currentYear = parseInt(e.target.value);
+                const monthNum = currentMonth.split('-')[1];
+                currentMonth = `${currentYear}-${monthNum}`;
+                setupMonthSelect();
+                setupYearSelector();
+                updateUI();
+            });
+        }
 
-function actualizarScore(dia) {
-  const scoreDiv = document.getElementById(`score_${dia}`);
-  const ingreso = datos[dia].ingreso || 0;
-  
-  if (ingreso >= META_DIARIA * 1.5) {
-    scoreDiv.textContent = '🔥 Excelente';
-    scoreDiv.className = 'score score-excelente';
-  } else if (ingreso >= META_DIARIA) {
-    scoreDiv.textContent = '✅ Bueno';
-    scoreDiv.className = 'score score-bueno';
-  } else if (ingreso > META_DIARIA * 0.5) {
-    scoreDiv.textContent = '⚠️ Regular';
-    scoreDiv.className = 'score score-regular';
-  } else if (ingreso > 0) {
-    scoreDiv.textContent = '❌ Bajo';
-    scoreDiv.className = 'score score-bajo';
-  } else {
-    scoreDiv.textContent = '-';
-    scoreDiv.className = 'score';
-    scoreDiv.style.background = '#f0f0f0';
-    scoreDiv.style.color = '#999';
-  }
-}
+        function setupMonthSelect() {
+            const select = document.getElementById('monthSelect');
+            const months = getMonthsForYear(currentYear);
+            
+            select.innerHTML = '';
+            months.forEach(month => {
+                const option = document.createElement('option');
+                option.value = month;
+                const [year, monthNum] = month.split('-');
+                option.textContent = monthNames[monthNum];
+                select.appendChild(option);
+            });
+            
+            select.value = currentMonth;
+            select.addEventListener('change', (e) => {
+                currentMonth = e.target.value;
+                updateUI();
+            });
+        }
 
-function actualizarTotales() {
-  let ingresoTotal = 0, gastosTotal = 0, serviciosTotal = 0, diasTrabajados = 0;
-  let juanDias = 0, reneDias = 0, danielDias = 0;
-  const semanas = {};
-  let mejorDia = { dia: 0, ingreso: 0 };
-  
-  Object.keys(datos).forEach(dia => {
-    const d = datos[dia];
-    const numSemana = Math.ceil(parseInt(dia) / 7);
-    
-    if (d.abierto) {
-      ingresoTotal += d.ingreso;
-      gastosTotal += d.gastos;
-      serviciosTotal += d.servicios;
-      diasTrabajados++;
-      
-      if (d.juan) juanDias++;
-      if (d.rene) reneDias++;
-      if (d.daniel) danielDias++;
-      
-      if (!semanas[numSemana]) semanas[numSemana] = 0;
-      semanas[numSemana] += d.ingreso;
-      
-      if (d.ingreso > mejorDia.ingreso) {
-        mejorDia = { dia: parseInt(dia), ingreso: d.ingreso };
-      }
-    }
-  });
-  
-  const juanPago = juanDias * salarios.juan;
-  const renePago = reneDias * salarios.rene;
-  const danielPago = danielDias * salarios.daniel;
-  const nominaTotal = juanPago + renePago + danielPago;
-  const gananciaTotal = ingresoTotal - gastosTotal - nominaTotal;
-  
-  document.getElementById('ingresoTotal').textContent = `$${ingresoTotal.toFixed(0)}`;
-  document.getElementById('gananciaTotal').textContent = `$${gananciaTotal.toFixed(0)}`;
-  document.getElementById('serviciosTotal').textContent = serviciosTotal;
-  document.getElementById('nominaTotal').textContent = `$${nominaTotal.toFixed(0)}`;
-  
-  const pct = (ingresoTotal / META_MENSUAL * 100).toFixed(0);
-  document.getElementById('metaIngreso').textContent = `Meta: $${META_MENSUAL} (${pct}%)`;
-  document.getElementById('progressIngreso').style.width = Math.min(pct, 100) + '%';
-  
-  const promServ = diasTrabajados > 0 ? (serviciosTotal / diasTrabajados).toFixed(1) : 0;
-  document.getElementById('promedioServ').textContent = `${promServ}/día`;
-  
-  const pctNomina = ingresoTotal > 0 ? (nominaTotal / ingresoTotal * 100).toFixed(0) : 0;
-  document.getElementById('pctNomina').textContent = `${pctNomina}% del ingreso`;
-  
-  document.getElementById('juanDias').textContent = juanDias;
-  document.getElementById('juanPago').textContent = `$${juanPago.toFixed(0)}`;
-  document.getElementById('reneDias').textContent = reneDias;
-  document.getElementById('renePago').textContent = `$${renePago.toFixed(0)}`;
-  document.getElementById('danielDias').textContent = danielDias;
-  document.getElementById('danielPago').textContent = `$${danielPago.toFixed(0)}`;
-  document.getElementById('nominaTotalModal').textContent = `$${nominaTotal.toFixed(0)}`;
-  
-  // Settings
-  document.getElementById('diasTrabajadosSetting').textContent = diasTrabajados;
-  const promDiario = diasTrabajados > 0 ? (ingresoTotal / diasTrabajados).toFixed(0) : 0;
-  document.getElementById('promedioDiarioSetting').textContent = `$${promDiario}`;
-  document.getElementById('mejorDiaSetting').textContent = mejorDia.ingreso > 0 
-    ? `${mejorDia.dia} Mar ($${mejorDia.ingreso.toFixed(0)})` 
-    : '-';
-  
-  Object.keys(semanas).forEach(sem => {
-    const el = document.getElementById(`total_semana_${sem}`);
-    if (el) {
-      el.textContent = `$${semanas[sem].toFixed(0)}`;
-      const header = el.closest('.week-header');
-      if (semanas[sem] >= META_SEMANAL) {
-        header.style.background = '#4CAF50';
-      } else if (semanas[sem] >= META_SEMANAL * 0.7) {
-        header.style.background = '#C9A84C';
-      } else {
-        header.style.background = '#0a0f18';
-      }
-    }
-  });
-}
+        function setupYearSelector() {
+            const container = document.getElementById('yearSelector');
+            const months = getMonthsForYear(currentYear);
+            
+            container.innerHTML = '';
+            months.forEach(month => {
+                const btn = document.createElement('button');
+                btn.className = 'month-btn';
+                const [year, monthNum] = month.split('-');
+                btn.textContent = monthNames[monthNum].slice(0, 3);
+                btn.onclick = () => {
+                    currentMonth = month;
+                    document.getElementById('monthSelect').value = month;
+                    switchSection('resumen');
+                    updateUI();
+                };
+                container.appendChild(btn);
+            });
+        }
 
-function guardarDatos() {
-  localStorage.setItem(`andrade_${yearActual}_${mesActual}`, JSON.stringify(datos));
-  alert('✅ Datos guardados');
-}
+        // Data Management
+        function loadData() {
+            const data = JSON.parse(localStorage.getItem(`fin_${currentMonth}`) || '{}');
+            return {
+                ingresos: data.ingresos || [],
+                gastos: data.gastos || [],
+                deudas: data.deudas || [],
+                provisiones: data.provisiones || [],
+                provisionesConfig: data.provisionesConfig || {}, // Metas anuales por categoría
+                deudaPendiente: data.deudaPendiente || [],
+                metaAhorro: data.metaAhorro || 0,
+                metaIngresos: data.metaIngresos || 0,
+                metaGastos: data.metaGastos || 0,
+                metaProvisiones: data.metaProvisiones || 0
+            };
+        }
 
-function cargarDatos() {
-  const guardado = localStorage.getItem(`andrade_${yearActual}_${mesActual}`);
-  if (guardado) {
-    datos = JSON.parse(guardado);
-    generarDias();
-    generarResumenSemanas();
-    alert('✅ Datos cargados');
-  } else {
-    alert('⚠️ No hay datos guardados');
-  }
-}
+        function saveData(data) {
+            localStorage.setItem(`fin_${currentMonth}`, JSON.stringify(data));
+            
+            // Update year selector if new year was created
+            const years = getAvailableYears();
+            const yearSelect = document.getElementById('yearSelect');
+            if (years.length !== yearSelect.options.length - 1) {
+                setupYearSelect();
+            }
+            
+            updateUI();
+        }
 
-function resetearMes() {
-  if (confirm('¿Resetear todo el mes?')) {
-    inicializarMes();
-    generarDias();
-    generarResumenSemanas();
-    alert('✅ Mes reseteado');
-  }
-}
+        function loadYearData() {
+            const yearData = {};
+            const months = getMonthsForYear(currentYear);
+            
+            months.forEach(month => {
+                yearData[month] = loadDataForMonth(month);
+            });
+            return yearData;
+        }
 
-// CHARTS FUNCTIONS
-function generarGraficas() {
-  generarGraficaSemanas();
-  generarGraficaTendencia();
-}
+        function loadDataForMonth(month) {
+            const data = JSON.parse(localStorage.getItem(`fin_${month}`) || '{}');
+            return {
+                ingresos: data.ingresos || [],
+                gastos: data.gastos || [],
+                deudas: data.deudas || [],
+                provisiones: data.provisiones || [],
+                metaAhorro: data.metaAhorro || 0,
+                metaIngresos: data.metaIngresos || 0,
+                metaGastos: data.metaGastos || 0,
+                metaProvisiones: data.metaProvisiones || 0
+            };
+        }
 
-function generarGraficaSemanas() {
-  const container = document.getElementById('chartSemanas');
-  if (!container) return;
-  container.innerHTML = '';
-  
-  const diasEnMes = new Date(yearActual, mesActual + 1, 0).getDate();
-  const numSemanas = Math.ceil(diasEnMes / 7);
-  const semanas = {};
-  
-  Object.keys(datos).forEach(dia => {
-    const numSemana = Math.ceil(parseInt(dia) / 7);
-    if (!semanas[numSemana]) semanas[numSemana] = 0;
-    if (datos[dia].abierto) {
-      semanas[numSemana] += datos[dia].ingreso;
-    }
-  });
-  
-  const maxIngreso = Math.max(...Object.values(semanas), META_SEMANAL, 1);
-  
-  for (let s = 1; s <= numSemanas; s++) {
-    const valor = semanas[s] || 0;
-    const height = (valor / maxIngreso) * 100;
-    
-    const bar = document.createElement('div');
-    bar.className = 'bar';
-    bar.style.height = height + '%';
-    bar.innerHTML = `
-      <div class="bar-value">$${valor.toFixed(0)}</div>
-      <div class="bar-label">S${s}</div>
-    `;
-    container.appendChild(bar);
-  }
-}
+        // UI Updates
+        function updateUI() {
+            const data = loadData();
+            
+            // Separar ingresos pendientes vs cobrados
+            const ingresosPendientes = data.ingresos.filter(i => i.estado === 'pendiente');
+            const ingresosCobrados = data.ingresos.filter(i => i.estado === 'cobrado');
+            
+            const totalIngresosEsperados = ingresosPendientes.reduce((sum, i) => sum + i.monto, 0);
+            const totalIngresosCobrados = ingresosCobrados.reduce((sum, i) => sum + i.monto, 0);
+            const totalIngresos = totalIngresosEsperados + totalIngresosCobrados;
+            
+            // Separar gastos efectivo vs crédito
+            const gastosEfectivo = data.gastos.filter(g => !g.credito);
+            const gastosCredito = data.gastos.filter(g => g.credito);
+            
+            const totalGastosEfectivo = gastosEfectivo.reduce((sum, g) => sum + g.monto, 0);
+            const totalGastosCredito = gastosCredito.reduce((sum, g) => sum + g.monto, 0);
+            const totalGastos = totalGastosEfectivo + totalGastosCredito;
+            const totalDeudas = data.deudas.reduce((sum, d) => sum + d.monto, 0);
+            const totalProvisiones = data.provisiones.reduce((sum, p) => sum + p.monto, 0);
+            
+            // Deuda pendiente de pago este mes
+            const totalDeudaPendiente = data.deudaPendiente.reduce((sum, d) => sum + d.monto, 0);
+            
+            // Balance: solo ingresos COBRADOS - gastos efectivo - deuda pendiente
+            const balance = totalIngresosCobrados - totalGastosEfectivo - totalDeudaPendiente;
 
-function generarGraficaTendencia() {
-  const svg = document.getElementById('chartTendencia');
-  if (!svg) return;
-  
-  svg.innerHTML = `
-    <defs>
-      <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-        <stop offset="0%" style="stop-color:#C9A84C;stop-opacity:0.4" />
-        <stop offset="100%" style="stop-color:#C9A84C;stop-opacity:0" />
-      </linearGradient>
-    </defs>
-  `;
-  
-  const diasEnMes = new Date(yearActual, mesActual + 1, 0).getDate();
-  const ingresos = [];
-  let acumulado = 0;
-  
-  for (let dia = 1; dia <= diasEnMes; dia++) {
-    if (datos[dia] && datos[dia].abierto) {
-      acumulado += datos[dia].ingreso;
-    }
-    ingresos.push(acumulado);
-  }
-  
-  const maxIngreso = Math.max(...ingresos, META_MENSUAL, 1);
-  const width = 300;
-  const height = 180;
-  const padding = 10;
-  
-  let pathData = '';
-  let areaData = '';
-  ingresos.forEach((valor, index) => {
-    const x = padding + (index / (diasEnMes - 1)) * (width - padding * 2);
-    const y = height - padding - ((valor / maxIngreso) * (height - padding * 2));
-    pathData += `${index === 0 ? 'M' : 'L'} ${x} ${y} `;
-    if (index === 0) areaData = `M ${x} ${height - padding} L ${x} ${y} `;
-    else areaData += `L ${x} ${y} `;
-  });
-  areaData += `L ${width - padding} ${height - padding} Z`;
-  
-  svg.innerHTML += `
-    <path class="line-area" d="${areaData}" />
-    <path class="line-path" d="${pathData}" />
-  `;
-  
-  const metaY = height - padding - ((META_MENSUAL / maxIngreso) * (height - padding * 2));
-  svg.innerHTML += `
-    <line x1="${padding}" y1="${metaY}" x2="${width - padding}" y2="${metaY}" 
-          stroke="#4CAF50" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
-  `;
-}
+            // Update cards resumen
+            document.getElementById('totalIngresos').textContent = `$${totalIngresosCobrados.toFixed(0)}`;
+            document.getElementById('totalGastos').textContent = `$${totalGastos.toFixed(0)}`;
+            document.getElementById('balance').textContent = `$${balance.toFixed(0)}`;
+            document.getElementById('totalDeudas').textContent = `$${totalDeudas.toFixed(0)}`;
+            document.getElementById('totalProvisiones').textContent = `$${totalProvisiones.toFixed(0)}`;
+            
+            // Update cards ingresos section
+            const ingresosEsperadosEl = document.getElementById('ingresosEsperados');
+            const ingresosCobradosEl = document.getElementById('ingresosCobrados');
+            if (ingresosEsperadosEl && ingresosCobradosEl) {
+                ingresosEsperadosEl.textContent = `$${totalIngresosEsperados.toFixed(0)}`;
+                ingresosCobradosEl.textContent = `$${totalIngresosCobrados.toFixed(0)}`;
+            }
+            // Deuda pendiente card
+            const deudaPendienteCard = document.getElementById('deudaPendienteCard');
+            if (totalDeudaPendiente > 0) {
+                deudaPendienteCard.style.display = 'block';
+                document.getElementById('totalDeudaPendiente').textContent = `$${totalDeudaPendiente.toFixed(0)}`;
+                
+                // Detalle
+                const detalle = data.deudaPendiente.map(d => {
+                    const [year, month] = d.mesOrigen.split('-');
+                    const monthNames = {
+                        '01': 'Ene', '02': 'Feb', '03': 'Mar', '04': 'Abr',
+                        '05': 'May', '06': 'Jun', '07': 'Jul', '08': 'Ago',
+                        '09': 'Sep', '10': 'Oct', '11': 'Nov', '12': 'Dic'
+                    };
+                    return `• ${d.concepto}: $${d.monto.toFixed(0)} (${monthNames[month]})`;
+                }).join('<br>');
+                document.getElementById('deudaPendienteDetalle').innerHTML = detalle;
+            } else {
+                deudaPendienteCard.style.display = 'none';
+            }
 
-// GOALS FUNCTIONS
-let metas = {
-  mensual: 1680,
-  semanal: 375,
-  diaria: 56
-};
+            // Balance status
+            const balanceEl = document.getElementById('balance');
+            const statusEl = document.getElementById('balanceStatus');
+            if (balance > 0) {
+                balanceEl.className = 'card-value positive';
+                statusEl.textContent = 'Superávit ✅';
+            } else if (balance < 0) {
+                balanceEl.className = 'card-value negative';
+                statusEl.textContent = 'Déficit ⚠️';
+            } else {
+                balanceEl.className = 'card-value neutral';
+                statusEl.textContent = 'Neutro';
+            }
 
-function cargarMetas() {
-  const guardadas = localStorage.getItem('andrade_metas');
-  if (guardadas) {
-    metas = JSON.parse(guardadas);
-    document.getElementById('metaMensual').value = metas.mensual;
-    document.getElementById('metaSemanal').value = metas.semanal;
-    document.getElementById('metaDiaria').value = metas.diaria;
-  }
-}
+            // Ingresos progress (usa total esperados + cobrados para la meta)
+            const metaIngresos = data.metaIngresos || 0;
+            const pctIngresos = metaIngresos > 0 ? Math.min((totalIngresosCobrados / metaIngresos) * 100, 100) : 0;
+            const ingresosProgressEl = document.getElementById('ingresosProgress');
+            const ingresosBarEl = document.getElementById('ingresosBar');
+            if (ingresosProgressEl && ingresosBarEl) {
+                ingresosProgressEl.textContent = `$${totalIngresosCobrados.toFixed(0)} / $${metaIngresos.toFixed(0)}`;
+                ingresosBarEl.style.width = `${pctIngresos}%`;
+            }
 
-function guardarMetas() {
-  localStorage.setItem('andrade_metas', JSON.stringify(metas));
-}
+            // Gastos progress (solo efectivo para la meta)
+            const metaGastos = data.metaGastos || 0;
+            const pctGastos = metaGastos > 0 ? Math.min((totalGastosEfectivo / metaGastos) * 100, 100) : 0;
+            const gastosProgressEl = document.getElementById('gastosProgress');
+            const gastosBarEl = document.getElementById('gastosBar');
+            if (gastosProgressEl && gastosBarEl) {
+                gastosProgressEl.textContent = `$${totalGastosEfectivo.toFixed(0)} / $${metaGastos.toFixed(0)}`;
+                gastosBarEl.style.width = `${pctGastos}%`;
+                gastosBarEl.className = pctGastos > 100 ? 'progress-fill negative' : 'progress-fill positive';
+            }
 
-function editarMeta(tipo) {
-  const input = document.getElementById(`meta${tipo.charAt(0).toUpperCase() + tipo.slice(1)}`);
-  input.readOnly = false;
-  input.focus();
-  input.select();
-  
-  input.onblur = function() {
-    const nuevoValor = parseFloat(input.value);
-    if (!isNaN(nuevoValor) && nuevoValor > 0) {
-      metas[tipo] = nuevoValor;
-      guardarMetas();
-      actualizarMetas();
-    }
-    input.readOnly = true;
-  };
-}
+            // Ahorro progress (balance menos provisiones)
+            const ahorroActual = balance > totalProvisiones ? balance - totalProvisiones : 0;
+            const metaAhorro = data.metaAhorro || 0;
+            const porcentaje = metaAhorro > 0 ? Math.min((ahorroActual / metaAhorro) * 100, 100) : 0;
+            const ahorroProgressEl = document.getElementById('ahorroProgress');
+            const ahorroBarEl = document.getElementById('ahorroBar');
+            if (ahorroProgressEl && ahorroBarEl) {
+                ahorroProgressEl.textContent = `$${ahorroActual.toFixed(0)} / $${metaAhorro.toFixed(0)}`;
+                ahorroBarEl.style.width = `${porcentaje}%`;
+            }
+            // Update year title
+            document.getElementById('yearTitle').textContent = currentYear;
 
-function actualizarMetas() {
-  metas.mensual = parseFloat(document.getElementById('metaMensual').value) || 1680;
-  metas.semanal = parseFloat(document.getElementById('metaSemanal').value) || 375;
-  metas.diaria = parseFloat(document.getElementById('metaDiaria').value) || 56;
-  
-  let ingresoTotal = 0, diasTrabajados = 0, ingresoHoy = 0;
-  const hoy = new Date();
-  const diaHoy = hoy.getDate();
-  const mesHoy = hoy.getMonth();
-  const yearHoy = hoy.getFullYear();
-  
-  const numSemanaActual = Math.ceil(diaHoy / 7);
-  let ingresoSemanaActual = 0;
-  
-  Object.keys(datos).forEach(dia => {
-    const d = datos[dia];
-    if (d.abierto) {
-      ingresoTotal += d.ingreso;
-      diasTrabajados++;
-      
-      const numSemana = Math.ceil(parseInt(dia) / 7);
-      if (numSemana === numSemanaActual) {
-        ingresoSemanaActual += d.ingreso;
-      }
-      
-      if (mesHoy === mesActual && parseInt(dia) === diaHoy && yearHoy === yearActual) {
-        ingresoHoy = d.ingreso;
-      }
-    }
-  });
-  
-  // Meta Mensual
-  const pctMensual = (ingresoTotal / metas.mensual * 100).toFixed(0);
-  const faltaMensual = Math.max(0, metas.mensual - ingresoTotal);
-  document.getElementById('metaMensualActual').textContent = `$${ingresoTotal.toFixed(0)}`;
-  document.getElementById('progressMensual').style.width = Math.min(pctMensual, 100) + '%';
-  document.getElementById('pctMensual').textContent = pctMensual + '%';
-  document.getElementById('faltaMensual').textContent = `$${faltaMensual.toFixed(0)}`;
-  
-  const progMensual = document.getElementById('progressMensual');
-  if (pctMensual >= 100) progMensual.className = 'goal-progress-fill';
-  else if (pctMensual >= 70) progMensual.className = 'goal-progress-fill';
-  else if (pctMensual >= 40) progMensual.className = 'goal-progress-fill warning';
-  else progMensual.className = 'goal-progress-fill danger';
-  
-  // Meta Semanal
-  const pctSemanal = (ingresoSemanaActual / metas.semanal * 100).toFixed(0);
-  const faltaSemanal = Math.max(0, metas.semanal - ingresoSemanaActual);
-  document.getElementById('metaSemanalActual').textContent = `$${ingresoSemanaActual.toFixed(0)}`;
-  document.getElementById('progressSemanal').style.width = Math.min(pctSemanal, 100) + '%';
-  document.getElementById('pctSemanal').textContent = pctSemanal + '%';
-  document.getElementById('faltaSemanal').textContent = `$${faltaSemanal.toFixed(0)}`;
-  
-  const progSemanal = document.getElementById('progressSemanal');
-  if (pctSemanal >= 100) progSemanal.className = 'goal-progress-fill';
-  else if (pctSemanal >= 70) progSemanal.className = 'goal-progress-fill';
-  else if (pctSemanal >= 40) progSemanal.className = 'goal-progress-fill warning';
-  else progSemanal.className = 'goal-progress-fill danger';
-  
-  // Meta Diaria
-  const promedio = diasTrabajados > 0 ? (ingresoTotal / diasTrabajados) : 0;
-  const pctDiaria = (ingresoHoy / metas.diaria * 100).toFixed(0);
-  document.getElementById('metaDiariaActual').textContent = `$${ingresoHoy.toFixed(0)}`;
-  document.getElementById('progressDiaria').style.width = Math.min(pctDiaria, 100) + '%';
-  document.getElementById('hoyIngreso').textContent = `$${ingresoHoy.toFixed(0)}`;
-  document.getElementById('promedioDiario').textContent = `$${promedio.toFixed(0)}`;
-  
-  const progDiaria = document.getElementById('progressDiaria');
-  if (pctDiaria >= 100) progDiaria.className = 'goal-progress-fill';
-  else if (pctDiaria >= 70) progDiaria.className = 'goal-progress-fill';
-  else if (pctDiaria >= 40) progDiaria.className = 'goal-progress-fill warning';
-  else progDiaria.className = 'goal-progress-fill danger';
-}
+            // Year summary
+            updateYearSummary();
 
-// CALCULATOR FUNCTIONS
-let calcValue = '0';
-let calcPrevious = null;
-let calcOperation = null;
-let calcWaiting = false;
+            // Lists
+            updateList('ingresos', data.ingresos);
+            updateList('gastos', data.gastos);
+            updateList('deudas', data.deudas);
+            
+            // Provisiones - actualizar vista de categorías
+            updateProvisionesCategorias();
+            
+            // Total mes en provisiones
+            const provisionesTotalMesEl = document.getElementById('provisionesTotalMes');
+            const provisionesMetaMesEl = document.getElementById('provisionesMetaMes');
+            const provisionesMesBarEl = document.getElementById('provisionesMesBar');
+            
+            if (provisionesTotalMesEl) {
+                provisionesTotalMesEl.textContent = `$${totalProvisiones.toFixed(0)}`;
+                const metaProvisionesMes = data.metaProvisiones || 0;
+                provisionesMetaMesEl.textContent = `$${metaProvisionesMes.toFixed(0)}`;
+                const pctProvisionesMes = metaProvisionesMes > 0 ? Math.min((totalProvisiones / metaProvisionesMes) * 100, 100) : 0;
+                provisionesMesBarEl.style.width = `${pctProvisionesMes}%`;
+            }
+            // Year selector
+            updateYearSelector();
+        }
 
-function calcClear() {
-  calcValue = '0';
-  calcPrevious = null;
-  calcOperation = null;
-  calcWaiting = false;
-  document.getElementById('calcResult').textContent = '0';
-  document.getElementById('calcOperation').textContent = '';
-}
+        function updateYearSummary() {
+            const yearData = loadYearData();
+            const months = getMonthsForYear(currentYear);
+            let yearIngresos = 0;
+            let yearGastos = 0;
+            let monthsWithData = 0;
 
-function calcNum(num) {
-  if (calcWaiting) {
-    calcValue = num;
-    calcWaiting = false;
-  } else {
-    calcValue = calcValue === '0' ? num : calcValue + num;
-  }
-  document.getElementById('calcResult').textContent = calcValue;
-}
+            months.forEach(month => {
+                const data = yearData[month];
+                const monthIngresos = data.ingresos.reduce((sum, i) => sum + i.monto, 0);
+                const monthGastos = data.gastos.reduce((sum, g) => sum + g.monto, 0);
+                
+                yearIngresos += monthIngresos;
+                yearGastos += monthGastos;
+                
+                if (data.ingresos.length > 0 || data.gastos.length > 0) {
+                    monthsWithData++;
+                }
+            });
 
-function calcOp(op) {
-  const input = parseFloat(calcValue);
-  
-  if (calcPrevious === null) {
-    calcPrevious = input;
-  } else if (calcOperation) {
-    const result = calcDoOperation();
-    calcValue = String(result);
-    calcPrevious = result;
-    document.getElementById('calcResult').textContent = calcValue;
-  }
-  
-  calcWaiting = true;
-  calcOperation = op;
-  document.getElementById('calcOperation').textContent = `${calcPrevious} ${op}`;
-}
+            const yearBalance = yearIngresos - yearGastos;
+            const promedio = monthsWithData > 0 ? yearBalance / monthsWithData : 0;
 
-function calcDoOperation() {
-  const prev = calcPrevious;
-  const current = parseFloat(calcValue);
-  
-  switch(calcOperation) {
-    case '+': return prev + current;
-    case '-': return prev - current;
-    case '*': return prev * current;
-    case '/': return prev / current;
-    default: return current;
-  }
-}
+            document.getElementById('yearIngresos').textContent = `$${yearIngresos.toFixed(0)}`;
+            document.getElementById('yearGastos').textContent = `$${yearGastos.toFixed(0)}`;
+            document.getElementById('yearBalance').textContent = `$${yearBalance.toFixed(0)}`;
+            document.getElementById('yearPromedio').textContent = `$${promedio.toFixed(0)}/mes`;
 
-function calcEquals() {
-  if (calcOperation && calcPrevious !== null) {
-    const result = calcDoOperation();
-    document.getElementById('calcResult').textContent = result.toFixed(2);
-    document.getElementById('calcOperation').textContent = '';
-    calcValue = String(result);
-    calcPrevious = null;
-    calcOperation = null;
-    calcWaiting = false;
-  }
-}
+            const balanceEl = document.getElementById('yearBalance');
+            balanceEl.className = yearBalance >= 0 ? 'summary-value positive' : 'summary-value negative';
+        }
 
-function calcPercent() {
-  const value = parseFloat(calcValue);
-  calcValue = String(value / 100);
-  document.getElementById('calcResult').textContent = calcValue;
-}
+        function updateYearSelector() {
+            const yearData = loadYearData();
+            const months = getMonthsForYear(currentYear);
+            const buttons = document.querySelectorAll('.month-btn');
+            
+            buttons.forEach((btn, index) => {
+                const month = months[index];
+                const data = yearData[month];
+                const hasData = data.ingresos.length > 0 || data.gastos.length > 0;
+                
+                btn.classList.toggle('has-data', hasData);
+                btn.classList.toggle('active', month === currentMonth);
+            });
+        }
 
-function calcPreset(value) {
-  if (calcOperation && calcPrevious !== null) {
-    calcValue = String(value);
-    const result = calcDoOperation();
-    document.getElementById('calcResult').textContent = result.toFixed(2);
-    calcValue = String(result);
-    calcPrevious = null;
-    calcOperation = null;
-  } else {
-    calcValue = String(value);
-    document.getElementById('calcResult').textContent = value.toFixed(2);
-  }
-}
+        function getMonthName(monthKey) {
+            const [year, month] = monthKey.split('-');
+            const monthNames = {
+                '01': 'Ene', '02': 'Feb', '03': 'Mar', '04': 'Abr',
+                '05': 'May', '06': 'Jun', '07': 'Jul', '08': 'Ago',
+                '09': 'Sep', '10': 'Oct', '11': 'Nov', '12': 'Dic'
+            };
+            return `${monthNames[month]} ${year}`;
+        }
 
-window.onload = function() {
-  cargarSalarios();
-  cargarMetas();
-  
-  // Establecer mes actual en el selector
-  document.getElementById('mesSelector').value = mesActual;
-  actualizarHeaderMes();
-  
-  // Cargar datos del mes actual
-  const guardado = localStorage.getItem(`andrade_${yearActual}_${mesActual}`);
-  if (guardado) {
-    datos = JSON.parse(guardado);
-  } else {
-    inicializarMes();
-  }
-  
-  generarDias();
-  generarResumenSemanas();
-  generarGraficas();
-  actualizarMetas();
-  
-  // Auto-expandir semana actual
-  setTimeout(() => {
-    const hoy = new Date();
-    if (hoy.getMonth() === mesActual && hoy.getFullYear() === yearActual) {
-      const numSemana = Math.ceil(hoy.getDate() / 7);
-      const content = document.getElementById(`content_semana_${numSemana}`);
-      const chevron = document.getElementById(`chevron_${numSemana}`);
-      if (content && chevron) {
-        content.classList.add('expanded');
-        chevron.classList.add('rotated');
-      }
-    }
-  }, 300);
-};
-</script>
+        function updateList(type, items) {
+            const list = document.getElementById(`${type}List`);
+            
+            if (items.length === 0) {
+                const icons = { ingresos: '↗', gastos: '↘', deudas: '◆', provisiones: '▪' };
+                list.innerHTML = `
+                    <div class="empty">
+                        <div class="empty-icon">${icons[type]}</div>
+                        <div>No hay ${type} registrados</div>
+                    </div>
+                `;
+                return;
+            }
 
+            list.innerHTML = items.map(item => {
+                if (type === 'deudas') {
+                    return `
+                        <div class="item">
+                            <div class="item-info">
+                                <div class="item-name">${item.nombre}</div>
+                                <div class="item-date">Cuota: $${item.cuota.toFixed(0)}/mes</div>
+                            </div>
+                            <div class="item-right">
+                                <div class="item-amount warning">$${item.monto.toFixed(0)}</div>
+                                <button class="delete-btn" onclick="deleteItem('${type}', ${item.id})">×</button>
+                            </div>
+                        </div>
+                    `;
+                } else if (type === 'provisiones') {
+                    // Provisiones ahora se manejan con updateProvisionesCategorias
+                    return '';
+                } else {
+                    const estadoBadge = type === 'ingresos' && item.estado === 'pendiente' 
+                        ? '<span style="background: var(--orange); color: white; padding: 3px 8px; border-radius: 4px; font-size: 11px; margin-left: 8px;">📋 Pendiente</span>'
+                        : type === 'ingresos' && item.estado === 'cobrado'
+                        ? '<span style="background: var(--green); color: white; padding: 3px 8px; border-radius: 4px; font-size: 11px; margin-left: 8px;">✅ Cobrado</span>'
+                        : '';
+                    
+                    const actionBtn = type === 'ingresos' && item.estado === 'pendiente'
+                        ? `<button class="add-btn" style="padding: 6px 12px; font-size: 12px; margin-right: 8px;" onclick="marcarCobrado(${item.id})">Cobrar</button>`
+                        : '';
+                    
+                    return `
+                        <div class="item">
+                            <div class="item-info">
+                                <div class="item-name">
+                                    ${item.nombre}
+                                    ${estadoBadge}
+                                    ${item.credito ? '<span class="badge badge-warning" style="margin-left: 8px; font-size: 11px;">💳 A crédito</span>' : ''}
+                                </div>
+                                <div class="item-date">${item.fecha}${item.credito && item.mesPago ? ` • Pagas en ${getMonthName(item.mesPago)}` : ''}</div>
+                            </div>
+                            <div class="item-right">
+                                ${actionBtn}
+                                <div class="item-amount ${type === 'ingresos' ? 'positive' : item.credito ? 'warning' : 'negative'}">
+                                    ${type === 'ingresos' ? '+' : '-'}$${item.monto.toFixed(0)}
+                                </div>
+                                <button class="delete-btn" onclick="deleteItem('${type}', ${item.id})">×</button>
+                            </div>
+                        </div>
+                    `;
+                }
+            }).join('');
+        }
+
+        // Navigation
+        function switchSection(section) {
+            currentSection = section;
+            
+            // Update sections
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.getElementById(`${section}Section`).classList.add('active');
+            
+            // Update nav
+            document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+            
+            // Update header
+            const titles = {
+                resumen: 'Resumen',
+                ingresos: 'Ingresos',
+                gastos: 'Gastos',
+                provisiones: 'Provisiones',
+                deudas: 'Deudas',
+                año: `Año ${currentYear}`
+            };
+            document.getElementById('headerTitle').textContent = titles[section];
+            
+            // Show/hide FAB
+            const fab = document.getElementById('fab');
+            fab.style.display = ['ingresos', 'gastos', 'deudas', 'provisiones'].includes(section) ? 'flex' : 'none';
+        }
+
+        // Modal
+        function openModal() {
+            const modal = document.getElementById('modal');
+            const form = document.getElementById('modalForm');
+            const title = document.getElementById('modalTitle');
+            
+            if (currentSection === 'ingresos') {
+                title.textContent = 'Agregar Ingreso';
+                form.innerHTML = `
+                    <div class="form-group">
+                        <label class="form-label">Fuente</label>
+                        <input type="text" id="nombre" placeholder="Ej: Carwash, Lic. Karla">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Monto</label>
+                        <input type="number" id="monto" placeholder="0.00">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Estado</label>
+                        <select id="estado">
+                            <option value="pendiente">📋 Pendiente (esperado)</option>
+                            <option value="cobrado">✅ Cobrado (recibido)</option>
+                        </select>
+                    </div>
+                    <button class="btn-primary" onclick="addIngreso()">Guardar</button>
+                `;
+            } else if (currentSection === 'gastos') {
+                title.textContent = 'Agregar Gasto';
+                form.innerHTML = `
+                    <div class="form-group">
+                        <label class="form-label">Concepto</label>
+                        <input type="text" id="nombre" placeholder="Ej: Comida, Integral">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Monto</label>
+                        <input type="number" id="monto" placeholder="0.00">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Forma de Pago</label>
+                        <select id="formaPago">
+                            <option value="efectivo">💵 Efectivo (pago hoy)</option>
+                            <option value="credito">💳 Crédito (pago después)</option>
+                        </select>
+                    </div>
+                    <div class="form-group" id="mesPagoGroup" style="display: none;">
+                        <label class="form-label">¿Cuándo lo pagarás?</label>
+                        <select id="mesPago"></select>
+                    </div>
+                    <button class="btn-primary" onclick="addGasto()">Guardar</button>
+                `;
+                
+                // Generar opciones de meses futuros
+                setTimeout(() => {
+                    const formaPago = document.getElementById('formaPago');
+                    const mesPagoGroup = document.getElementById('mesPagoGroup');
+                    const mesPagoSelect = document.getElementById('mesPago');
+                    
+                    formaPago.addEventListener('change', (e) => {
+                        mesPagoGroup.style.display = e.target.value === 'credito' ? 'block' : 'none';
+                    });
+                    
+                    // Generar próximos 6 meses
+                    const [year, month] = currentMonth.split('-');
+                    const currentDate = new Date(parseInt(year), parseInt(month) - 1);
+                    
+                    for (let i = 1; i <= 6; i++) {
+                        const futureDate = new Date(currentDate);
+                        futureDate.setMonth(futureDate.getMonth() + i);
+                        const futureYear = futureDate.getFullYear();
+                        const futureMonth = String(futureDate.getMonth() + 1).padStart(2, '0');
+                        const monthKey = `${futureYear}-${futureMonth}`;
+                        
+                        const monthNames = {
+                            '01': 'Enero', '02': 'Febrero', '03': 'Marzo', '04': 'Abril',
+                            '05': 'Mayo', '06': 'Junio', '07': 'Julio', '08': 'Agosto',
+                            '09': 'Septiembre', '10': 'Octubre', '11': 'Noviembre', '12': 'Diciembre'
+                        };
+                        
+                        const option = document.createElement('option');
+                        option.value = monthKey;
+                        option.textContent = `${monthNames[futureMonth]} ${futureYear}`;
+                        mesPagoSelect.appendChild(option);
+                    }
+                }, 100);
+            } else if (currentSection === 'provisiones') {
+                const data = loadData();
+                const categorias = Object.keys(data.provisionesConfig);
+                
+                if (categorias.length === 0) {
+                    alert('Primero configura tus categorías de ahorro.\n\nTap en "⚙️ Configurar" para crear tus metas anuales.');
+                    return;
+                }
+                
+                title.textContent = 'Apartar para Categoría';
+                form.innerHTML = `
+                    <div class="form-group">
+                        <label class="form-label">Categoría</label>
+                        <select id="categoria">
+                            ${categorias.map(cat => `<option value="${cat}">${cat}</option>`).join('')}
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Monto a Apartar</label>
+                        <input type="number" id="monto" placeholder="0.00">
+                    </div>
+                    <div id="sugerencia" style="font-size: 13px; color: var(--text-tertiary); margin-top: -8px; margin-bottom: 16px;"></div>
+                    <button class="btn-primary" onclick="addProvision()">Apartar Dinero</button>
+                `;
+                
+                setTimeout(() => {
+                    const catSelect = document.getElementById('categoria');
+                    const updateSugerencia = () => {
+                        const cat = catSelect.value;
+                        const config = data.provisionesConfig[cat];
+                        if (config) {
+                            const apartado = getApartadoAnual(cat, currentYear);
+                            const falta = config.metaAnual - apartado;
+                            const mesesRestantes = 12 - (parseInt(currentMonth.split('-')[1]));
+                            const sugeridoMes = mesesRestantes > 0 ? Math.ceil(falta / mesesRestantes) : falta;
+                            
+                            document.getElementById('sugerencia').textContent = 
+                                `Meta: $${config.metaAnual} | Apartado: $${apartado} | Sugerido este mes: $${sugeridoMes}`;
+                        }
+                    };
+                    catSelect.addEventListener('change', updateSugerencia);
+                    updateSugerencia();
+                }, 100);
+            } else if (currentSection === 'deudas') {
+                title.textContent = 'Agregar Deuda';
+                form.innerHTML = `
+                    <div class="form-group">
+                        <label class="form-label">Acreedor</label>
+                        <input type="text" id="nombre" placeholder="Ej: Apoyo Integral">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Saldo Total</label>
+                        <input type="number" id="monto" placeholder="0.00">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Cuota Mensual</label>
+                        <input type="number" id="cuota" placeholder="0.00">
+                    </div>
+                    <button class="btn-primary" onclick="addDeuda()">Guardar</button>
+                `;
+            }
+            
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.remove('active');
+        }
+
+        // Add functions
+        function addIngreso() {
+            const nombre = document.getElementById('nombre').value;
+            const monto = parseFloat(document.getElementById('monto').value);
+            const estado = document.getElementById('estado').value;
+            
+            if (!nombre || !monto) return alert('Completa todos los campos');
+            
+            const data = loadData();
+            data.ingresos.push({
+                id: Date.now(),
+                nombre,
+                monto,
+                estado: estado,
+                fecha: new Date().toLocaleDateString('es-ES')
+            });
+            
+            saveData(data);
+            closeModal();
+        }
+
+        function addGasto() {
+            const nombre = document.getElementById('nombre').value;
+            const monto = parseFloat(document.getElementById('monto').value);
+            const formaPago = document.getElementById('formaPago').value;
+            const mesPago = formaPago === 'credito' ? document.getElementById('mesPago').value : null;
+            
+            if (!nombre || !monto) return alert('Completa todos los campos');
+            
+            const data = loadData();
+            const gasto = {
+                id: Date.now(),
+                nombre,
+                monto,
+                fecha: new Date().toLocaleDateString('es-ES'),
+                credito: formaPago === 'credito',
+                mesPago: mesPago
+            };
+            
+            data.gastos.push(gasto);
+            
+            // Si es a crédito, agregar a deudas pendientes del mes de pago
+            if (formaPago === 'credito' && mesPago) {
+                const dataMesPago = loadDataForMonth(mesPago);
+                if (!dataMesPago.deudaPendiente) {
+                    dataMesPago.deudaPendiente = [];
+                }
+                dataMesPago.deudaPendiente.push({
+                    id: Date.now() + 1,
+                    concepto: nombre,
+                    monto: monto,
+                    mesOrigen: currentMonth,
+                    fecha: new Date().toLocaleDateString('es-ES')
+                });
+                localStorage.setItem(`fin_${mesPago}`, JSON.stringify(dataMesPago));
+            }
+            
+            saveData(data);
+            closeModal();
+        }
+
+        function addDeuda() {
+            const nombre = document.getElementById('nombre').value;
+            const monto = parseFloat(document.getElementById('monto').value);
+            const cuota = parseFloat(document.getElementById('cuota').value);
+            
+            if (!nombre || !monto || !cuota) return alert('Completa todos los campos');
+            
+            const data = loadData();
+            data.deudas.push({
+                id: Date.now(),
+                nombre,
+                monto,
+                cuota
+            });
+            
+            saveData(data);
+            closeModal();
+        }
+
+        function addProvision() {
+            const categoria = document.getElementById('categoria').value;
+            const monto = parseFloat(document.getElementById('monto').value);
+            
+            if (!categoria || !monto) return alert('Completa todos los campos');
+            
+            const data = loadData();
+            data.provisiones.push({
+                id: Date.now(),
+                categoria,
+                monto,
+                fecha: new Date().toLocaleDateString('es-ES')
+            });
+            
+            saveData(data);
+            closeModal();
+        }
+
+        function getApartadoAnual(categoria, year) {
+            let total = 0;
+            for (let m = 1; m <= 12; m++) {
+                const monthKey = `${year}-${String(m).padStart(2, '0')}`;
+                const monthData = loadDataForMonth(monthKey);
+                const aportes = monthData.provisiones.filter(p => p.categoria === categoria);
+                total += aportes.reduce((sum, p) => sum + p.monto, 0);
+            }
+            return total;
+        }
+
+        function openConfigProvisiones() {
+            const data = loadData();
+            const config = data.provisionesConfig;
+            const categorias = Object.keys(config);
+            
+            const modal = document.getElementById('modal');
+            const form = document.getElementById('modalForm');
+            const title = document.getElementById('modalTitle');
+            
+            title.textContent = 'Configurar Categorías de Ahorro';
+            
+            let html = '<div style="margin-bottom: 20px; font-size: 14px; color: var(--text-secondary);">Define tus metas anuales de ahorro. La app calculará cuánto apartar cada mes.</div>';
+            
+            // Mostrar categorías existentes
+            if (categorias.length > 0) {
+                html += '<div style="margin-bottom: 20px;">';
+                categorias.forEach(cat => {
+                    const meta = config[cat].metaAnual;
+                    const apartado = getApartadoAnual(cat, currentYear);
+                    const progreso = meta > 0 ? Math.round((apartado / meta) * 100) : 0;
+                    
+                    html += `
+                        <div class="card" style="padding: 16px; margin-bottom: 10px;">
+                            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
+                                <strong>${cat}</strong>
+                                <button onclick="deleteCategoria('${cat}')" style="background: transparent; border: none; color: var(--red); cursor: pointer; font-size: 18px;">×</button>
+                            </div>
+                            <div style="font-size: 13px; color: var(--text-tertiary); margin-bottom: 8px;">
+                                Meta ${currentYear}: $${meta} | Apartado: $${apartado} (${progreso}%)
+                            </div>
+                            <div class="progress-bar" style="height: 6px;">
+                                <div class="progress-fill neutral" style="width: ${Math.min(progreso, 100)}%"></div>
+                            </div>
+                        </div>
+                    `;
+                });
+                html += '</div>';
+            }
+            
+            // Formulario nueva categoría
+            html += `
+                <div style="border-top: 1px solid var(--border); padding-top: 20px;">
+                    <div class="form-group">
+                        <label class="form-label">Nueva Categoría</label>
+                        <input type="text" id="nuevaCategoria" placeholder="Ej: Viaje, Emergencias, Equipo">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Meta Anual ${currentYear}</label>
+                        <input type="number" id="metaAnual" placeholder="0.00">
+                    </div>
+                    <button class="btn-primary" onclick="addCategoria()">Agregar Categoría</button>
+                </div>
+            `;
+            
+            form.innerHTML = html;
+            modal.classList.add('active');
+        }
+
+        function addCategoria() {
+            const nombre = document.getElementById('nuevaCategoria').value.trim();
+            const meta = parseFloat(document.getElementById('metaAnual').value);
+            
+            if (!nombre || !meta) return alert('Completa todos los campos');
+            
+            const data = loadData();
+            if (!data.provisionesConfig) data.provisionesConfig = {};
+            
+            if (data.provisionesConfig[nombre]) {
+                return alert('Ya existe una categoría con ese nombre');
+            }
+            
+            data.provisionesConfig[nombre] = {
+                metaAnual: meta,
+                creada: new Date().toISOString()
+            };
+            
+            saveData(data);
+            openConfigProvisiones(); // Refresh
+        }
+
+        function deleteCategoria(nombre) {
+            if (!confirm(`¿Eliminar categoría "${nombre}"?\n\nSe mantendrán los aportes ya realizados.`)) return;
+            
+            const data = loadData();
+            delete data.provisionesConfig[nombre];
+            saveData(data);
+            openConfigProvisiones(); // Refresh
+        }
+
+        function updateProvisionesCategorias() {
+            const data = loadData();
+            const config = data.provisionesConfig;
+            const categorias = Object.keys(config);
+            const container = document.getElementById('provisionesCategorias');
+            
+            if (categorias.length === 0) {
+                container.innerHTML = `
+                    <div class="empty">
+                        <div class="empty-icon">⚙️</div>
+                        <div>Configura tus categorías de ahorro</div>
+                        <button class="add-btn" style="margin-top: 12px;" onclick="openConfigProvisiones()">Configurar Ahora</button>
+                    </div>
+                `;
+                return;
+            }
+            
+            let html = '';
+            categorias.forEach(cat => {
+                const meta = config[cat].metaAnual;
+                const apartado = getApartadoAnual(cat, currentYear);
+                const falta = Math.max(0, meta - apartado);
+                const progreso = meta > 0 ? Math.min(100, Math.round((apartado / meta) * 100)) : 0;
+                
+                const mesActual = parseInt(currentMonth.split('-')[1]);
+                const mesesRestantes = Math.max(1, 12 - mesActual + 1);
+                const sugerido = Math.ceil(falta / mesesRestantes);
+                
+                html += `
+                    <div class="card" style="margin-bottom: 12px;">
+                        <div style="margin-bottom: 12px;">
+                            <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 4px;">
+                                <strong style="font-size: 15px;">${cat}</strong>
+                                <span style="font-size: 14px; font-weight: 700; color: var(--neutral);">$${apartado}</span>
+                            </div>
+                            <div style="font-size: 13px; color: var(--text-tertiary);">
+                                Meta ${currentYear}: $${meta} • Faltan: $${falta}
+                            </div>
+                        </div>
+                        <div class="progress-bar" style="height: 8px; margin-bottom: 8px;">
+                            <div class="progress-fill neutral" style="width: ${progreso}%"></div>
+                        </div>
+                        <div style="display: flex; justify-content: space-between; font-size: 12px; color: var(--text-tertiary);">
+                            <span>${progreso}% completado</span>
+                            <span>Sugerido: $${sugerido}/mes</span>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            container.innerHTML = html;
+        }
+
+        function editMeta() {
+            const currentMeta = loadData().metaAhorro || 0;
+            const meta = prompt('Meta de ahorro mensual (dinero libre después de gastos y provisiones):', currentMeta);
+            if (meta === null) return;
+            
+            const metaNum = parseFloat(meta);
+            if (isNaN(metaNum) || metaNum < 0) return alert('Ingresa un monto válido');
+            
+            const data = loadData();
+            data.metaAhorro = metaNum;
+            saveData(data);
+        }
+
+        function editMetaIngresos() {
+            const currentMeta = loadData().metaIngresos || 0;
+            const meta = prompt('Meta de ingresos mensuales (cuánto quieres ganar este mes):', currentMeta);
+            if (meta === null) return;
+            
+            const metaNum = parseFloat(meta);
+            if (isNaN(metaNum) || metaNum < 0) return alert('Ingresa un monto válido');
+            
+            const data = loadData();
+            data.metaIngresos = metaNum;
+            saveData(data);
+        }
+
+        function editMetaGastos() {
+            const currentMeta = loadData().metaGastos || 0;
+            const meta = prompt('Presupuesto de gastos mensuales (máximo que quieres gastar):', currentMeta);
+            if (meta === null) return;
+            
+            const metaNum = parseFloat(meta);
+            if (isNaN(metaNum) || metaNum < 0) return alert('Ingresa un monto válido');
+            
+            const data = loadData();
+            data.metaGastos = metaNum;
+            saveData(data);
+        }
+
+        function editMetaProvisiones() {
+            const currentMeta = loadData().metaProvisiones || 0;
+            const meta = prompt('Meta de provisiones mensuales (cuánto quieres apartar):', currentMeta);
+            if (meta === null) return;
+            
+            const metaNum = parseFloat(meta);
+            if (isNaN(metaNum) || metaNum < 0) return alert('Ingresa un monto válido');
+            
+            const data = loadData();
+            data.metaProvisiones = metaNum;
+            saveData(data);
+        }
+
+        function marcarCobrado(id) {
+            const data = loadData();
+            const ingreso = data.ingresos.find(i => i.id === id);
+            if (ingreso) {
+                ingreso.estado = 'cobrado';
+                saveData(data);
+            }
+        }
+
+        function deleteItem(type, id) {
+            if (!confirm('¿Eliminar este registro?')) return;
+            
+            const data = loadData();
+            data[type] = data[type].filter(item => item.id !== id);
+            saveData(data);
+        }
+
+        // Close modal on background click
+        document.getElementById('modal').addEventListener('click', (e) => {
+            if (e.target.id === 'modal') closeModal();
+        });
+
+        // Initialize app
+        init();
+
+        // Install prompt
+        let deferredPrompt;
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            
+            // Show install hint
+            if (!localStorage.getItem('installHintShown')) {
+                setTimeout(() => {
+                    if (confirm('¿Instalar esta app en tu pantalla de inicio?')) {
+                        deferredPrompt.prompt();
+                        deferredPrompt.userChoice.then((choiceResult) => {
+                            deferredPrompt = null;
+                        });
+                    }
+                    localStorage.setItem('installHintShown', 'true');
+                }, 3000);
+            }
+        });
+    </script>
 </body>
 </html>
