@@ -1,0 +1,2444 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#0a0f18">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Tracker Andrade">
+<meta name="description" content="Sistema de control financiero - Andrade Detailing Studio">
+<link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIlRyYWNrZXIgQW5kcmFkZSBEZXRhaWxpbmcgU3R1ZGlvIiwKICAic2hvcnRfbmFtZSI6ICJUcmFja2VyIEFuZHJhZGUiLAogICJkZXNjcmlwdGlvbiI6ICJTaXN0ZW1hIGRlIGNvbnRyb2wgZmluYW5jaWVybyBwYXJhIEFuZHJhZGUgRGV0YWlsaW5nIFN0dWRpbyIsCiAgInN0YXJ0X3VybCI6ICIuIiwKICAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwKICAiYmFja2dyb3VuZF9jb2xvciI6ICIjZjVmNWY1IiwKICAidGhlbWVfY29sb3IiOiAiIzBhMGYxOCIsCiAgIm9yaWVudGF0aW9uIjogInBvcnRyYWl0IiwKICAiaWNvbnMiOiBbCiAgICB7CiAgICAgICJzcmMiOiAiZGF0YTppbWFnZS9zdmcreG1sO2Jhc2U2NCxQSE4yWnlCNGJXeHVjejBpYUhSMGNEb3ZMM2QzZHk1M015NXZjbWN2TWpBd01DOXpkbWNpSUhacFpYZENiM2c5SWpBZ01DQXhPVElnTVRreUlqNDhjbVZqZENCM2FXUjBhRDBpTVRreUlpQm9aV2xuYUhROUlqRTVNaUlnWm1sc2JEMGlJekJoTUdZeE9DSXZQanh3WVhSb0lHUTlJazB4TURBZ05UQmpNQ3d5TnkwNU15d3hNREF0TVRBd0xERXdNSE10TVRBd0xURTBNeUF4TURBdE1UQXdJREV3TUhvaUlHWnBiR3c5SWlObVptWWlMejQ4Y0dGMGFDQmtQU0pOT0RBZ09EQm9NelJqTWlBd0lETWdNU0F6SUROMklEVjJMVFVqTXlBekxUTWdNeTB6SUROMExUVWdOUzAxZWlJZ1ptbHNiRDBpSTJNNVlUZzBZeUl2UGp3dmMzWm5QZz09IiwKICAgICAgInNpemVzIjogIjE5MngxOTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9zdmcreG1sIgogICAgfSwKICAgIHsKICAgICAgInNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUI0Yld4dWN6MGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TUM5emRtY2lJSFpwWlhkQ2IzZzlJakFnTUNBMU1USWdOVEV5SWo0OGNtVmpkQ0IzYVdSMGFEMGlOVEV5SWlCb1pXbG5hSFE5SWpVeE1pSWdabWxzYkQwaUl6QmhNR1l4T0NJdlBqeHdZWFJvSUdROUlrMHlOVFlnTVRNell6QXNOalF0TlRJc01URTJMVEUzTWl3eE1UWjhNU3d5TmpBZ01URTJMVEUzTWlBeE1UWWdNall3SURGOExUSXlOeXd5TkRndE1UY3lMREV4Tmkwb01URTJMREUzTWlreFFURXhOaTR3TWl3eE1UWXVNRE1nTUNBd0lEQWdNQ0F4SURFdE1UY3lJREV4TmlBeE1UWWdNVGN5SURFdU1EY3RNall3SURFeE5pMHhNVFlnTVRjeUxURXhOaUF4TFRJMk55NHdOaTB4TVRZdE1URTJJREUzTWkweE1UWTZNQ0EwTWlBd0lEQWdNQ0F3SURFZ01TMDBNQ0EwTWkweElEQXRNaTA0TkNBd0lERXRORElnTWpGNklpQm1hV3hzUFNJak1HRXdaakU0SWk4K1BIQmhkR2dnWkQwaVRUSTJOeUF5TVROb05qUmpNaUF3SURNZ01TQXpJRE40TkdZNUlEUXRNeUEwTFRNZ05DMHhJREF0TVMweExUUXRNeUF3TFRRdE15QTBMVEVnTUMweElERXRNSG9pSUdacGJHdzlJaU5qT1dFNE5HTWlMejQ4TDNOMlp6ND0iLAogICAgICAic2l6ZXMiOiAiNTEyeDUxMiIsCiAgICAgICJ0eXBlIjogImltYWdlL3N2Zyt4bWwiCiAgICB9CiAgXQp9">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<title>Tracker Andrade 📊</title>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f5f5f5;
+  padding-bottom: 70px;
+  overflow-x: hidden;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #0a0f18 0%, #1a1f28 100%);
+  color: white;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+  font-size: 20px;
+  margin-bottom: 3px;
+}
+
+.header p {
+  font-size: 13px;
+  opacity: 0.9;
+  color: #C9A84C;
+}
+
+/* Tab Content */
+.tab-content {
+  display: none;
+  animation: fadeIn 0.3s;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+  padding: 8px 0 8px 0;
+  padding-bottom: max(8px, env(safe-area-inset-bottom));
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 0;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  background: none;
+  color: #999;
+  position: relative;
+}
+
+.nav-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 3px;
+  background: transparent;
+  border-radius: 0 0 3px 3px;
+  transition: all 0.2s;
+}
+
+.nav-item.active::before {
+  background: #C9A84C;
+}
+
+.nav-item.active {
+  color: #C9A84C;
+}
+
+.nav-icon {
+  font-size: 22px;
+  filter: grayscale(100%);
+  opacity: 0.6;
+  transition: all 0.2s;
+}
+
+.nav-item.active .nav-icon {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.nav-label {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+/* Dashboard Stats */
+.dashboard {
+  padding: 20px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.stat-card.highlight {
+  background: linear-gradient(135deg, #0a0f18 0%, #1a1f28 100%);
+  color: white;
+}
+
+.stat-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+  opacity: 0.8;
+  color: #C9A84C;
+}
+
+.stat-card.highlight .stat-label {
+  color: #C9A84C;
+}
+
+.stat-value {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.stat-sub {
+  font-size: 12px;
+  opacity: 0.7;
+}
+
+.progress-bar {
+  height: 6px;
+  background: rgba(0,0,0,0.1);
+  border-radius: 3px;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: white;
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+
+.stat-card:not(.highlight) .progress-fill {
+  background: #C9A84C;
+}
+
+/* Section Header */
+.section-header {
+  padding: 15px 20px;
+  background: white;
+  margin-bottom: 2px;
+  font-weight: 700;
+  font-size: 14px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Week Card */
+.week-card {
+  background: white;
+  margin-bottom: 15px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.week-header {
+  background: #0a0f18;
+  color: white;
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.week-header:active {
+  background: #1a1f28;
+}
+
+.week-info h3 {
+  font-size: 16px;
+  margin-bottom: 3px;
+}
+
+.week-info p {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+.week-total {
+  text-align: right;
+}
+
+.week-amount {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.week-meta {
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.chevron {
+  font-size: 18px;
+  transition: transform 0.3s;
+  margin-left: 10px;
+}
+
+.chevron.rotated {
+  transform: rotate(180deg);
+}
+
+.week-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.week-content.expanded {
+  max-height: 5000px;
+}
+
+/* Day Card */
+.day-card {
+  padding: 20px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.day-card:last-child {
+  border-bottom: none;
+}
+
+.day-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.day-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+.badge-today {
+  background: #4CAF50;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 10px;
+  font-weight: 700;
+  margin-left: 8px;
+}
+
+.day-date {
+  font-size: 12px;
+  color: #999;
+}
+
+.toggle-btn {
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.toggle-btn.closed {
+  background: #ddd;
+  color: #666;
+}
+
+.day-fields {
+  display: grid;
+  gap: 12px;
+}
+
+.field-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 6px;
+}
+
+.field-input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  background: #fafafa;
+}
+
+.field-input:focus {
+  outline: none;
+  border-color: #C9A84C;
+  background: white;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.team-btn {
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  background: white;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #666;
+}
+
+.team-btn.active {
+  background: #C9A84C;
+  border-color: #C9A84C;
+  color: white;
+}
+
+.score {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 13px;
+  margin-top: 12px;
+}
+
+.score-excelente { background: #4CAF50; color: white; }
+.score-bueno { background: #2196F3; color: white; }
+.score-regular { background: #FFC107; color: #333; }
+.score-bajo { background: #D32F2F; color: white; }
+
+/* Payroll Cards */
+.payroll-container {
+  padding: 20px;
+}
+
+.payroll-card {
+  background: linear-gradient(135deg, #0a0f18 0%, #1a1f28 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.payroll-card h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  opacity: 0.9;
+  color: #C9A84C;
+}
+
+.payroll-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.payroll-row:last-child {
+  border: none;
+}
+
+.payroll-row.editable {
+  cursor: pointer;
+}
+
+.payroll-row.editable .payroll-value {
+  text-decoration: underline;
+}
+
+.payroll-row.total {
+  font-size: 20px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.payroll-total-card {
+  background: #f0f0f0;
+  color: #333;
+  padding: 20px;
+  border-radius: 16px;
+  margin-top: 20px;
+}
+
+.payroll-total-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.hint {
+  text-align: center;
+  padding: 12px;
+  background: rgba(201, 168, 76, 0.1);
+  border-radius: 10px;
+  font-size: 12px;
+  color: #C9A84C;
+  font-weight: 600;
+  margin-top: 15px;
+}
+
+/* Settings */
+.settings-container {
+  padding: 20px;
+}
+
+.settings-group {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.settings-group h3 {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.settings-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.settings-item:last-child {
+  border: none;
+}
+
+.settings-label {
+  font-size: 15px;
+  font-weight: 600;
+  color: #333;
+}
+
+.settings-value {
+  font-size: 14px;
+  color: #C9A84C;
+  font-weight: 600;
+}
+
+.btn {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.btn-primary { background: #4CAF50; color: white; }
+.btn-secondary { background: #2196F3; color: white; }
+.btn-danger { background: #f44336; color: white; }
+
+.container {
+  padding: 0 0 20px 0;
+}
+
+
+/* Charts */
+.chart-container {
+  padding: 20px;
+}
+
+.chart-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.chart-card h3 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.bar-chart {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  height: 200px;
+  padding: 10px 0;
+}
+
+.bar {
+  flex: 1;
+  background: linear-gradient(135deg, #C9A84C 0%, #d4b865 100%);
+  border-radius: 8px 8px 0 0;
+  position: relative;
+  min-height: 10px;
+  transition: all 0.3s;
+}
+
+.bar:hover {
+  opacity: 0.8;
+}
+
+.bar-label {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 10px;
+  font-weight: 600;
+  color: #666;
+  white-space: nowrap;
+}
+
+.bar-value {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  font-weight: 700;
+  color: #0a0f18;
+  white-space: nowrap;
+}
+
+.line-chart {
+  height: 180px;
+  position: relative;
+  margin: 20px 0;
+}
+
+.line-path {
+  stroke: #C9A84C;
+  stroke-width: 3;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.line-area {
+  fill: url(#gradient);
+  opacity: 0.2;
+}
+
+/* Goals */
+.goals-container {
+  padding: 20px;
+}
+
+.goal-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.goal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.goal-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+.goal-edit {
+  background: none;
+  border: none;
+  color: #C9A84C;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.goal-input-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.goal-input {
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.goal-input:focus {
+  outline: none;
+  border-color: #C9A84C;
+}
+
+.goal-progress {
+  margin-top: 10px;
+}
+
+.goal-progress-bar {
+  height: 10px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.goal-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #4CAF50 0%, #8BC34A 100%);
+  border-radius: 5px;
+  transition: width 0.3s;
+}
+
+.goal-progress-fill.warning {
+  background: linear-gradient(90deg, #FFC107 0%, #FFD54F 100%);
+}
+
+.goal-progress-fill.danger {
+  background: linear-gradient(90deg, #D32F2F 0%, #F44336 100%);
+}
+
+.goal-stats {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #666;
+}
+
+.goal-stat-value {
+  font-weight: 700;
+  color: #C9A84C;
+}
+
+/* Calculator */
+.calc-container {
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.calc-display {
+  background: linear-gradient(135deg, #0a0f18 0%, #1a1f28 100%);
+  color: white;
+  padding: 30px 20px;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.calc-operation {
+  font-size: 14px;
+  color: #C9A84C;
+  margin-bottom: 8px;
+  min-height: 20px;
+}
+
+.calc-result {
+  font-size: 42px;
+  font-weight: 700;
+  text-align: right;
+}
+
+.calc-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.calc-btn {
+  aspect-ratio: 1;
+  border: none;
+  border-radius: 16px;
+  font-size: 24px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.calc-btn:active {
+  transform: scale(0.95);
+}
+
+.calc-btn-number {
+  background: white;
+  color: #333;
+}
+
+.calc-btn-operator {
+  background: #C9A84C;
+  color: white;
+}
+
+.calc-btn-clear {
+  background: #D32F2F;
+  color: white;
+}
+
+.calc-btn-equals {
+  background: #4CAF50;
+  color: white;
+  grid-column: span 2;
+}
+
+.calc-presets {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.calc-presets h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #333;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.preset-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.preset-btn {
+  padding: 12px;
+  border: 2px solid #e0e0e0;
+  border-radius: 10px;
+  background: white;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.preset-btn:active {
+  background: #C9A84C;
+  border-color: #C9A84C;
+  color: white;
+}
+
+.preset-label {
+  display: block;
+  font-size: 10px;
+  color: #999;
+  margin-top: 3px;
+}
+
+/* Alert Panels */
+.alert-panel {
+  background: linear-gradient(135deg, #C9A84C 0%, #d4b865 100%);
+  color: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 15px 20px;
+  box-shadow: 0 4px 15px rgba(201, 168, 76, 0.3);
+}
+
+.alert-panel.warning {
+  background: linear-gradient(135deg, #ff9800 0%, #ffa726 100%);
+  box-shadow: 0 4px 15px rgba(255, 152, 0, 0.3);
+}
+
+.alert-panel.danger {
+  background: linear-gradient(135deg, #D32F2F 0%, #e57373 100%);
+  box-shadow: 0 4px 15px rgba(211, 47, 47, 0.3);
+}
+
+.alert-panel.success {
+  background: linear-gradient(135deg, #4CAF50 0%, #66bb6a 100%);
+  box-shadow: 0 4px 15px rgba(76, 175, 80, 0.3);
+}
+
+.alert-title {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.alert-content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.alert-item {
+  text-align: center;
+}
+
+.alert-label {
+  font-size: 11px;
+  opacity: 0.9;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.alert-value {
+  font-size: 24px;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.alert-message {
+  font-size: 13px;
+  line-height: 1.5;
+  opacity: 0.95;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255,255,255,0.3);
+}
+
+.projection-panel {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  margin: 15px 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.projection-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.projection-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.projection-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.projection-row:last-child {
+  border-bottom: none;
+}
+
+.projection-label {
+  font-size: 13px;
+  color: #666;
+}
+
+.projection-value {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0a0f18;
+}
+
+.projection-value.positive {
+  color: #4CAF50;
+}
+
+.projection-value.negative {
+  color: #D32F2F;
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>📊 Tracker Andrade</h1>
+  <p id="mesActual">Marzo 2026</p>
+  <select id="mesSelector" onchange="cambiarMes()" style="margin-top: 10px; padding: 8px 12px; border-radius: 8px; border: 1px solid rgba(255,255,255,0.3); background: rgba(255,255,255,0.1); color: white; font-size: 13px; cursor: pointer; width: 100%;">
+    <option value="0">Enero</option>
+    <option value="1">Febrero</option>
+    <option value="2">Marzo</option>
+    <option value="3">Abril</option>
+    <option value="4">Mayo</option>
+    <option value="5">Junio</option>
+    <option value="6">Julio</option>
+    <option value="7">Agosto</option>
+    <option value="8">Septiembre</option>
+    <option value="9">Octubre</option>
+    <option value="10">Noviembre</option>
+    <option value="11">Diciembre</option>
+  </select>
+</div>
+
+<!-- TAB 1: RESUMEN -->
+<div id="tab-resumen" class="tab-content active">
+  <div class="dashboard">
+    <!-- Panel Semana Actual -->
+    <div id="panelSemanaActual"></div>
+    
+    <!-- Panel Proyección -->
+    <div id="panelProyeccion"></div>
+    
+    <!-- Panel Alertas -->
+    <div id="panelAlertas"></div>
+    
+    <div class="stats-grid">
+      <div class="stat-card highlight">
+        <div class="stat-label">💰 Ingreso</div>
+        <div class="stat-value" id="ingresoTotal">$0</div>
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressIngreso" style="width: 0%"></div>
+        </div>
+        <div class="stat-sub" id="metaIngreso">Meta: $1,680</div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-label">📊 Ganancia</div>
+        <div class="stat-value" id="gananciaTotal">$0</div>
+        <div class="stat-sub">Neta del mes</div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-label">🔧 Servicios</div>
+        <div class="stat-value" id="serviciosTotal">0</div>
+        <div class="stat-sub" id="promedioServ">0/día</div>
+      </div>
+      
+      <div class="stat-card">
+        <div class="stat-label">💵 Nómina</div>
+        <div class="stat-value" id="nominaTotal">$0</div>
+        <div class="stat-sub" id="pctNomina">0%</div>
+      </div>
+    </div>
+    
+    <div class="section-header">📈 Resumen por Semana</div>
+    
+    <div id="resumenSemanas"></div>
+  </div>
+</div>
+
+<!-- TAB 2: DÍAS -->
+<div id="tab-dias" class="tab-content">
+  <div class="container" id="diasContainer">
+    <!-- Semanas se generan aquí -->
+  </div>
+</div>
+
+<!-- TAB 3: NÓMINA -->
+<!-- TAB 4: AJUSTES -->
+<div id="tab-ajustes" class="tab-content">
+  <div class="settings-container">
+    <div class="section-header">💰 NÓMINA</div>
+    
+    <div class="payroll-card">
+      <h3>Juan (Supervisor)</h3>
+      <div class="payroll-row">
+        <span>Días trabajados:</span>
+        <span id="juanDias">0</span>
+      </div>
+      <div class="payroll-row editable" onclick="editarSalario('juan')">
+        <span>Pago por día:</span>
+        <span class="payroll-value" id="juanSalario">$30</span>
+      </div>
+      <div class="payroll-row total">
+        <span>Total a pagar:</span>
+        <span id="juanPago">$0</span>
+      </div>
+    </div>
+    
+    <div class="payroll-card">
+      <h3>René (Operario)</h3>
+      <div class="payroll-row">
+        <span>Días trabajados:</span>
+        <span id="reneDias">0</span>
+      </div>
+      <div class="payroll-row editable" onclick="editarSalario('rene')">
+        <span>Pago por día:</span>
+        <span class="payroll-value" id="reneSalario">$40</span>
+      </div>
+      <div class="payroll-row total">
+        <span>Total a pagar:</span>
+        <span id="renePago">$0</span>
+      </div>
+    </div>
+    
+    <div class="payroll-card">
+      <h3>Daniel (Operario)</h3>
+      <div class="payroll-row">
+        <span>Días trabajados:</span>
+        <span id="danielDias">0</span>
+      </div>
+      <div class="payroll-row editable" onclick="editarSalario('daniel')">
+        <span>Pago por día:</span>
+        <span class="payroll-value" id="danielSalario">$40</span>
+      </div>
+      <div class="payroll-row total">
+        <span>Total a pagar:</span>
+        <span id="danielPago">$0</span>
+      </div>
+    </div>
+    
+    <div class="payroll-total-card">
+      <div class="payroll-total-row">
+        <span>Total Nómina:</span>
+        <span id="nominaTotalModal">$0</span>
+      </div>
+    </div>
+    
+    <div class="hint">
+      💡 Toca "Pago por día" para editar salarios
+    </div>
+    
+    <div class="settings-group" style="margin-top: 30px;">
+      <h3>📊 Información del Mes</h3>
+      <div class="settings-item">
+        <span class="settings-label">Días trabajados</span>
+        <span class="settings-value" id="diasTrabajadosSetting">0</span>
+      </div>
+      <div class="settings-item">
+        <span class="settings-label">Promedio diario</span>
+        <span class="settings-value" id="promedioDiarioSetting">$0</span>
+      </div>
+      <div class="settings-item">
+        <span class="settings-label">Mejor día</span>
+        <span class="settings-value" id="mejorDiaSetting">-</span>
+      </div>
+    </div>
+    
+    <div class="settings-group">
+      <h3>💾 Datos</h3>
+      <button class="btn btn-primary" onclick="guardarDatos()">💾 Guardar Datos</button>
+      <button class="btn btn-secondary" onclick="cargarDatos()">📂 Cargar Datos</button>
+      <button class="btn btn-danger" onclick="resetearMes()">🔄 Resetear Mes</button>
+    </div>
+    
+    <div class="settings-group">
+      <h3>📤 Transferir Datos</h3>
+      <button class="btn btn-primary" onclick="exportarDatos()">📤 Exportar Datos</button>
+      <button class="btn btn-secondary" onclick="importarDatos()">📥 Importar Datos</button>
+      <div class="hint" style="margin-top: 10px;">
+        💡 Usa Exportar/Importar para transferir datos entre dispositivos o versiones
+      </div>
+    </div>
+    
+    <div class="settings-group">
+      <h3>ℹ️ Información</h3>
+      <div class="settings-item">
+        <span class="settings-label">Versión</span>
+        <span class="settings-value">2.0</span>
+      </div>
+      <div class="settings-item">
+        <span class="settings-label">Andrade Detailing Studio</span>
+        <span class="settings-value">2026</span>
+      </div>
+    </div>
+    
+    <div class="section-header" style="margin-top: 30px;">🧮 CALCULADORA RÁPIDA</div>
+    
+    <div class="calc-container">
+      <div class="calc-display">
+        <div class="calc-operation" id="calcOperation"></div>
+        <div class="calc-result" id="calcResult">0</div>
+      </div>
+      
+      <div class="calc-buttons">
+        <button class="calc-btn calc-btn-clear" onclick="calcClear()">C</button>
+        <button class="calc-btn calc-btn-operator" onclick="calcOp('/')">/</button>
+        <button class="calc-btn calc-btn-operator" onclick="calcOp('*')">×</button>
+        <button class="calc-btn calc-btn-operator" onclick="calcOp('-')">-</button>
+        
+        <button class="calc-btn calc-btn-number" onclick="calcNum('7')">7</button>
+        <button class="calc-btn calc-btn-number" onclick="calcNum('8')">8</button>
+        <button class="calc-btn calc-btn-number" onclick="calcNum('9')">9</button>
+        <button class="calc-btn calc-btn-operator" onclick="calcOp('+')">+</button>
+        
+        <button class="calc-btn calc-btn-number" onclick="calcNum('4')">4</button>
+        <button class="calc-btn calc-btn-number" onclick="calcNum('5')">5</button>
+        <button class="calc-btn calc-btn-number" onclick="calcNum('6')">6</button>
+        <button class="calc-btn calc-btn-operator" onclick="calcPercent()">%</button>
+        
+        <button class="calc-btn calc-btn-number" onclick="calcNum('1')">1</button>
+        <button class="calc-btn calc-btn-number" onclick="calcNum('2')">2</button>
+        <button class="calc-btn calc-btn-number" onclick="calcNum('3')">3</button>
+        <button class="calc-btn calc-btn-number" onclick="calcNum('.')">.</button>
+        
+        <button class="calc-btn calc-btn-number" onclick="calcNum('0')" style="grid-column: span 2;">0</button>
+        <button class="calc-btn calc-btn-equals" onclick="calcEquals()">=</button>
+      </div>
+      
+      <div class="calc-presets">
+        <h3>⚡ Atajos Rápidos</h3>
+        <div class="preset-grid">
+          <button class="preset-btn" onclick="calcPreset(7.99)">
+            $7.99 <span class="preset-label">Lavado Deluxe</span>
+          </button>
+          <button class="preset-btn" onclick="calcPreset(12.99)">
+            $12.99 <span class="preset-label">Lavado Premium</span>
+          </button>
+          <button class="preset-btn" onclick="calcPreset(20)">
+            $20 <span class="preset-label">Detallado Bronce</span>
+          </button>
+          <button class="preset-btn" onclick="calcPreset(35)">
+            $35 <span class="preset-label">Detallado Plata</span>
+          </button>
+          <button class="preset-btn" onclick="calcPreset(55)">
+            $55 <span class="preset-label">Detallado Oro</span>
+          </button>
+          <button class="preset-btn" onclick="calcPreset(85)">
+            $85 <span class="preset-label">Tapicería</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TAB 5: GRÁFICAS -->
+<div id="tab-graficas" class="tab-content">
+  <div class="chart-container">
+    <div class="chart-card">
+      <h3>📊 Ingresos por Semana</h3>
+      <div class="bar-chart" id="chartSemanas"></div>
+    </div>
+    
+    <div class="chart-card">
+      <h3>📈 Tendencia del Mes</h3>
+      <svg class="line-chart" id="chartTendencia" viewBox="0 0 300 180">
+        <defs>
+          <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" style="stop-color:#C9A84C;stop-opacity:0.4" />
+            <stop offset="100%" style="stop-color:#C9A84C;stop-opacity:0" />
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+  </div>
+</div>
+
+<!-- TAB 6: METAS -->
+<div id="tab-metas" class="tab-content">
+  <div class="goals-container">
+    <div class="goal-card">
+      <div class="goal-header">
+        <h3 class="goal-title">💰 Meta Mensual</h3>
+        <button class="goal-edit" onclick="editarMeta('mensual')">✏️</button>
+      </div>
+      <div class="goal-input-group">
+        <input type="number" id="metaMensual" class="goal-input" value="1680" 
+               oninput="actualizarMetas()" readonly>
+        <div style="display: flex; align-items: center; justify-content: center; 
+                    font-size: 32px; font-weight: 700; color: #C9A84C;" id="metaMensualActual">$0</div>
+      </div>
+      <div class="goal-progress">
+        <div class="goal-progress-bar">
+          <div class="goal-progress-fill" id="progressMensual" style="width: 0%"></div>
+        </div>
+        <div class="goal-stats">
+          <span>Progreso: <span class="goal-stat-value" id="pctMensual">0%</span></span>
+          <span>Faltan: <span class="goal-stat-value" id="faltaMensual">$0</span></span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="goal-card">
+      <div class="goal-header">
+        <h3 class="goal-title">📅 Meta Semanal</h3>
+        <button class="goal-edit" onclick="editarMeta('semanal')">✏️</button>
+      </div>
+      <div class="goal-input-group">
+        <input type="number" id="metaSemanal" class="goal-input" value="375" 
+               oninput="actualizarMetas()" readonly>
+        <div style="display: flex; align-items: center; justify-content: center; 
+                    font-size: 32px; font-weight: 700; color: #C9A84C;" id="metaSemanalActual">$0</div>
+      </div>
+      <div class="goal-progress">
+        <div class="goal-progress-bar">
+          <div class="goal-progress-fill" id="progressSemanal" style="width: 0%"></div>
+        </div>
+        <div class="goal-stats">
+          <span>Progreso: <span class="goal-stat-value" id="pctSemanal">0%</span></span>
+          <span>Faltan: <span class="goal-stat-value" id="faltaSemanal">$0</span></span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="goal-card">
+      <div class="goal-header">
+        <h3 class="goal-title">☀️ Meta Diaria</h3>
+        <button class="goal-edit" onclick="editarMeta('diaria')">✏️</button>
+      </div>
+      <div class="goal-input-group">
+        <input type="number" id="metaDiaria" class="goal-input" value="56" 
+               oninput="actualizarMetas()" readonly>
+        <div style="display: flex; align-items: center; justify-content: center; 
+                    font-size: 32px; font-weight: 700; color: #C9A84C;" id="metaDiariaActual">$0</div>
+      </div>
+      <div class="goal-progress">
+        <div class="goal-progress-bar">
+          <div class="goal-progress-fill" id="progressDiaria" style="width: 0%"></div>
+        </div>
+        <div class="goal-stats">
+          <span>Hoy: <span class="goal-stat-value" id="hoyIngreso">$0</span></span>
+          <span>Promedio: <span class="goal-stat-value" id="promedioDiario">$0</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bottom Navigation -->
+<div class="bottom-nav">
+  <button class="nav-item active" onclick="cambiarTab('resumen')">
+    <div class="nav-icon">📈</div>
+    <div class="nav-label">Resumen</div>
+  </button>
+  <button class="nav-item" onclick="cambiarTab('dias')">
+    <div class="nav-icon">📋</div>
+    <div class="nav-label">Días</div>
+  </button>
+  <button class="nav-item" onclick="cambiarTab('graficas')">
+    <div class="nav-icon">📊</div>
+    <div class="nav-label">Gráficas</div>
+  </button>
+  <button class="nav-item" onclick="cambiarTab('metas')">
+    <div class="nav-icon">🎯</div>
+    <div class="nav-label">Metas</div>
+  </button>
+  <button class="nav-item" onclick="cambiarTab('ajustes')">
+    <div class="nav-icon">⚙️</div>
+    <div class="nav-label">Más</div>
+  </button>
+</div>
+
+<script>
+const DIAS_SEMANA = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
+const MESES = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 
+               'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'];
+const META_MENSUAL = 1680;
+const META_SEMANAL = 375;
+const META_DIARIA = 56;
+
+let salarios = { juan: 30, rene: 40, daniel: 40 };
+let mesActual = new Date().getMonth(); // Auto-detecta mes actual
+let yearActual = new Date().getFullYear();
+let datos = {};
+let tabActual = 'resumen';
+
+function cambiarMes() {
+  mesActual = parseInt(document.getElementById('mesSelector').value);
+  
+  // Guardar datos del mes anterior antes de cambiar
+  const guardadoActual = localStorage.getItem(`andrade_${yearActual}_${mesActual}`);
+  
+  // Actualizar UI
+  actualizarHeaderMes();
+  
+  // Cargar datos del nuevo mes o inicializar
+  const guardado = localStorage.getItem(`andrade_${yearActual}_${mesActual}`);
+  if (guardado) {
+    datos = JSON.parse(guardado);
+  } else {
+    inicializarMes();
+  }
+  
+  generarDias();
+  generarResumenSemanas();
+}
+
+function actualizarHeaderMes() {
+  document.getElementById('mesActual').textContent = `${MESES[mesActual]} ${yearActual}`;
+}
+
+function cargarSalarios() {
+  const guardados = localStorage.getItem('andrade_salarios');
+  if (guardados) {
+    salarios = JSON.parse(guardados);
+  }
+  actualizarSalariosUI();
+}
+
+function guardarSalarios() {
+  localStorage.setItem('andrade_salarios', JSON.stringify(salarios));
+}
+
+function actualizarSalariosUI() {
+  document.getElementById('juanSalario').textContent = `$${salarios.juan}`;
+  document.getElementById('reneSalario').textContent = `$${salarios.rene}`;
+  document.getElementById('danielSalario').textContent = `$${salarios.daniel}`;
+}
+
+function editarSalario(persona) {
+  const nombres = { juan: 'Juan', rene: 'René', daniel: 'Daniel' };
+  const nuevoSalario = prompt(`Nuevo salario por día para ${nombres[persona]}:`, salarios[persona]);
+  
+  if (nuevoSalario !== null && nuevoSalario !== '') {
+    const valor = parseFloat(nuevoSalario);
+    if (!isNaN(valor) && valor > 0) {
+      salarios[persona] = valor;
+      guardarSalarios();
+      actualizarSalariosUI();
+      actualizarTotales();
+      alert(`✅ Salario de ${nombres[persona]} actualizado a $${valor}/día`);
+    } else {
+      alert('⚠️ Ingresa un número válido');
+    }
+  }
+}
+
+function cambiarTab(tab) {
+  tabActual = tab;
+  
+  document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.nav-item').forEach(n => n.classList.remove('active'));
+  
+  document.getElementById(`tab-${tab}`).classList.add('active');
+  
+  // Activate the clicked nav item
+  const tabs = ['resumen', 'dias', 'graficas', 'metas', 'ajustes'];
+  const index = tabs.indexOf(tab);
+  if (index !== -1) {
+    document.querySelectorAll('.nav-item')[index].classList.add('active');
+  }
+  
+  // Update content when switching tabs
+  if (tab === 'resumen') {
+    generarResumenSemanas();
+    generarPanelSemanaActual();
+    generarPanelProyeccion();
+    generarPanelAlertas();
+  } else if (tab === 'dias') {
+    // Scroll al día de hoy cuando se abre la pestaña Días
+    scrollAlDiaDeHoy();
+  } else if (tab === 'graficas') {
+    generarGraficas();
+  } else if (tab === 'metas') {
+    actualizarMetas();
+  }
+}
+
+function inicializarMes() {
+  const diasEnMes = new Date(yearActual, mesActual + 1, 0).getDate();
+  datos = {};
+  
+  for (let dia = 1; dia <= diasEnMes; dia++) {
+    const fecha = new Date(yearActual, mesActual, dia);
+    datos[dia] = {
+      abierto: fecha.getDay() !== 0,
+      ingreso: 0,
+      gastos: 0,
+      servicios: 0,
+      juan: false,
+      rene: false,
+      daniel: false
+    };
+  }
+}
+
+function generarDias() {
+  const container = document.getElementById('diasContainer');
+  container.innerHTML = '';
+  
+  const diasEnMes = new Date(yearActual, mesActual + 1, 0).getDate();
+  const hoy = new Date();
+  const diaHoy = hoy.getDate();
+  const mesHoy = hoy.getMonth();
+  const yearHoy = hoy.getFullYear();
+  
+  let semanaActual = null;
+  let weekCard, weekContent;
+  
+  for (let dia = 1; dia <= diasEnMes; dia++) {
+    const fecha = new Date(yearActual, mesActual, dia);
+    const numSemana = Math.ceil(dia / 7);
+    
+    if (numSemana !== semanaActual) {
+      semanaActual = numSemana;
+      const primerDia = ((numSemana - 1) * 7) + 1;
+      const ultimoDia = Math.min(numSemana * 7, diasEnMes);
+      
+      weekCard = document.createElement('div');
+      weekCard.className = 'week-card';
+      
+      weekCard.innerHTML = `
+        <div class="week-header" onclick="toggleSemana(${numSemana})">
+          <div class="week-info">
+            <h3>Semana ${numSemana}</h3>
+            <p>${primerDia}-${ultimoDia} ${MESES[mesActual].substring(0, 3)}</p>
+          </div>
+          <div class="week-total">
+            <div class="week-amount" id="total_semana_${numSemana}">$0</div>
+            <div class="week-meta">Meta $${META_SEMANAL}</div>
+          </div>
+          <span class="chevron" id="chevron_${numSemana}">▼</span>
+        </div>
+        <div class="week-content" id="content_semana_${numSemana}"></div>
+      `;
+      
+      container.appendChild(weekCard);
+      weekContent = weekCard.querySelector('.week-content');
+    }
+    
+    const esHoy = mesHoy === mesActual && dia === diaHoy && yearHoy === yearActual;
+    const data = datos[dia];
+    const nombreDia = DIAS_SEMANA[fecha.getDay()];
+    
+    const dayCard = document.createElement('div');
+    dayCard.className = 'day-card';
+    dayCard.id = `dia_${dia}`;
+    
+    dayCard.innerHTML = `
+      <div class="day-header">
+        <div>
+          <span class="day-title">${nombreDia} ${dia}</span>
+          ${esHoy ? '<span class="badge-today">HOY</span>' : ''}
+          <div class="day-date">${fecha.toLocaleDateString('es-ES', {month: 'long', day: 'numeric'})}</div>
+        </div>
+        <button class="toggle-btn ${data.abierto ? '' : 'closed'}" onclick="toggleDia(${dia})">
+          ${data.abierto ? '✓ Abierto' : '✕ Cerrado'}
+        </button>
+      </div>
+      
+      <div class="day-fields">
+        <div>
+          <div class="field-label">💰 Ingreso</div>
+          <input type="number" class="field-input" id="ingreso_${dia}" 
+                 value="${data.ingreso || ''}" placeholder="$0.00" step="0.01"
+                 oninput="actualizarDia(${dia})">
+        </div>
+        
+        <div>
+          <div class="field-label">📉 Gastos</div>
+          <input type="number" class="field-input" id="gastos_${dia}" 
+                 value="${data.gastos || ''}" placeholder="$0.00" step="0.01"
+                 oninput="actualizarDia(${dia})">
+        </div>
+        
+        <div>
+          <div class="field-label">🔧 Servicios</div>
+          <input type="number" class="field-input" id="servicios_${dia}" 
+                 value="${data.servicios || ''}" placeholder="0"
+                 oninput="actualizarDia(${dia})">
+        </div>
+        
+        <div>
+          <div class="field-label">👥 Quién trabajó</div>
+          <div class="team-grid">
+            <button class="team-btn ${data.juan ? 'active' : ''}" id="juan_${dia}" onclick="toggleTeam(${dia}, 'juan')">Juan</button>
+            <button class="team-btn ${data.rene ? 'active' : ''}" id="rene_${dia}" onclick="toggleTeam(${dia}, 'rene')">René</button>
+            <button class="team-btn ${data.daniel ? 'active' : ''}" id="daniel_${dia}" onclick="toggleTeam(${dia}, 'daniel')">Daniel</button>
+          </div>
+        </div>
+        
+        <div class="score" id="score_${dia}">-</div>
+      </div>
+    `;
+    
+    weekContent.appendChild(dayCard);
+    actualizarScore(dia);
+  }
+  
+  actualizarTotales();
+  
+  // Auto-scroll al día de HOY
+  scrollAlDiaDeHoy();
+}
+
+// Función para hacer scroll al día de hoy
+function scrollAlDiaDeHoy() {
+  setTimeout(() => {
+    const hoy = new Date();
+    const diaHoy = hoy.getDate();
+    const mesHoy = hoy.getMonth();
+    const yearHoy = hoy.getFullYear();
+    
+    if (mesHoy === mesActual && yearHoy === yearActual) {
+      const semanaHoy = Math.ceil(diaHoy / 7);
+      const contentSemana = document.getElementById(`content_semana_${semanaHoy}`);
+      const chevron = document.getElementById(`chevron_${semanaHoy}`);
+      
+      // Abrir la semana actual primero
+      if (contentSemana && !contentSemana.classList.contains('expanded')) {
+        contentSemana.classList.add('expanded');
+        if (chevron) chevron.classList.add('rotated');
+      }
+      
+      // Esperar un momento más para que se expanda, luego hacer scroll
+      setTimeout(() => {
+        const diaHoyElement = document.getElementById(`dia_${diaHoy}`);
+        if (diaHoyElement) {
+          diaHoyElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      }, 200);
+    }
+  }, 300);
+}
+
+function generarResumenSemanas() {
+  const container = document.getElementById('resumenSemanas');
+  container.innerHTML = '';
+  
+  const diasEnMes = new Date(yearActual, mesActual + 1, 0).getDate();
+  const numSemanas = Math.ceil(diasEnMes / 7);
+  const semanas = {};
+  
+  Object.keys(datos).forEach(dia => {
+    const numSemana = Math.ceil(parseInt(dia) / 7);
+    if (!semanas[numSemana]) semanas[numSemana] = 0;
+    if (datos[dia].abierto) {
+      semanas[numSemana] += datos[dia].ingreso;
+    }
+  });
+  
+  for (let s = 1; s <= numSemanas; s++) {
+    const total = semanas[s] || 0;
+    const pct = (total / META_SEMANAL * 100).toFixed(0);
+    
+    const card = document.createElement('div');
+    card.className = 'week-card';
+    card.style.marginBottom = '10px';
+    card.innerHTML = `
+      <div class="week-header" style="background: ${total >= META_SEMANAL ? '#4CAF50' : total >= META_SEMANAL * 0.7 ? '#C9A84C' : '#0a0f18'}">
+        <div class="week-info">
+          <h3>Semana ${s}</h3>
+        </div>
+        <div class="week-total">
+          <div class="week-amount">$${total.toFixed(0)}</div>
+          <div class="week-meta">${pct}% de meta</div>
+        </div>
+      </div>
+    `;
+    container.appendChild(card);
+  }
+}
+
+function toggleSemana(numSemana) {
+  const content = document.getElementById(`content_semana_${numSemana}`);
+  const chevron = document.getElementById(`chevron_${numSemana}`);
+  
+  if (content.classList.contains('expanded')) {
+    content.classList.remove('expanded');
+    chevron.classList.remove('rotated');
+  } else {
+    content.classList.add('expanded');
+    chevron.classList.add('rotated');
+  }
+}
+
+function toggleDia(dia) {
+  datos[dia].abierto = !datos[dia].abierto;
+  const btn = document.querySelector(`#dia_${dia} .toggle-btn`);
+  btn.textContent = datos[dia].abierto ? '✓ Abierto' : '✕ Cerrado';
+  btn.className = `toggle-btn ${datos[dia].abierto ? '' : 'closed'}`;
+  actualizarTotales();
+  autoGuardar();
+}
+
+function toggleTeam(dia, persona) {
+  datos[dia][persona] = !datos[dia][persona];
+  const btn = document.getElementById(`${persona}_${dia}`);
+  btn.className = `team-btn ${datos[dia][persona] ? 'active' : ''}`;
+  actualizarTotales();
+  autoGuardar();
+}
+
+function actualizarDia(dia) {
+  datos[dia].ingreso = parseFloat(document.getElementById(`ingreso_${dia}`).value) || 0;
+  datos[dia].gastos = parseFloat(document.getElementById(`gastos_${dia}`).value) || 0;
+  datos[dia].servicios = parseInt(document.getElementById(`servicios_${dia}`).value) || 0;
+  actualizarScore(dia);
+  actualizarTotales();
+  autoGuardar();
+}
+
+function actualizarScore(dia) {
+  const scoreDiv = document.getElementById(`score_${dia}`);
+  const ingreso = datos[dia].ingreso || 0;
+  const trabajaron = datos[dia].juan || datos[dia].rene || datos[dia].daniel;
+  
+  // Si no está abierto, no mostrar nada
+  if (!datos[dia].abierto) {
+    scoreDiv.textContent = '-';
+    scoreDiv.className = 'score';
+    scoreDiv.style.background = '#f0f0f0';
+    scoreDiv.style.color = '#999';
+    return;
+  }
+  
+  // Si hay ingreso, evaluar por meta
+  if (ingreso >= META_DIARIA * 1.5) {
+    scoreDiv.textContent = '🔥 Excelente';
+    scoreDiv.className = 'score score-excelente';
+  } else if (ingreso >= META_DIARIA) {
+    scoreDiv.textContent = '✅ Bueno';
+    scoreDiv.className = 'score score-bueno';
+  } else if (ingreso > META_DIARIA * 0.5) {
+    scoreDiv.textContent = '⚠️ Regular';
+    scoreDiv.className = 'score score-regular';
+  } else if (ingreso > 0) {
+    scoreDiv.textContent = '❌ Bajo';
+    scoreDiv.className = 'score score-bajo';
+  } else if (trabajaron) {
+    // Día sin ingreso pero alguien trabajó
+    scoreDiv.textContent = '👷 Trabajado';
+    scoreDiv.className = 'score';
+    scoreDiv.style.background = '#FFA726';
+    scoreDiv.style.color = 'white';
+  } else {
+    // Día abierto pero sin datos
+    scoreDiv.textContent = '-';
+    scoreDiv.className = 'score';
+    scoreDiv.style.background = '#f0f0f0';
+    scoreDiv.style.color = '#999';
+  }
+}
+
+function actualizarTotales() {
+  let ingresoTotal = 0, gastosTotal = 0, serviciosTotal = 0, diasTrabajados = 0;
+  let juanDias = 0, reneDias = 0, danielDias = 0;
+  const semanas = {};
+  let mejorDia = { dia: 0, ingreso: 0 };
+  
+  Object.keys(datos).forEach(dia => {
+    const d = datos[dia];
+    const numSemana = Math.ceil(parseInt(dia) / 7);
+    
+    if (d.abierto) {
+      ingresoTotal += d.ingreso;
+      gastosTotal += d.gastos;
+      serviciosTotal += d.servicios;
+      diasTrabajados++;
+      
+      if (d.juan) juanDias++;
+      if (d.rene) reneDias++;
+      if (d.daniel) danielDias++;
+      
+      if (!semanas[numSemana]) semanas[numSemana] = 0;
+      semanas[numSemana] += d.ingreso;
+      
+      if (d.ingreso > mejorDia.ingreso) {
+        mejorDia = { dia: parseInt(dia), ingreso: d.ingreso };
+      }
+    }
+  });
+  
+  const juanPago = juanDias * salarios.juan;
+  const renePago = reneDias * salarios.rene;
+  const danielPago = danielDias * salarios.daniel;
+  const nominaTotal = juanPago + renePago + danielPago;
+  const gananciaTotal = ingresoTotal - gastosTotal - nominaTotal;
+  
+  document.getElementById('ingresoTotal').textContent = `$${ingresoTotal.toFixed(0)}`;
+  document.getElementById('gananciaTotal').textContent = `$${gananciaTotal.toFixed(0)}`;
+  document.getElementById('serviciosTotal').textContent = serviciosTotal;
+  document.getElementById('nominaTotal').textContent = `$${nominaTotal.toFixed(0)}`;
+  
+  const pct = (ingresoTotal / META_MENSUAL * 100).toFixed(0);
+  document.getElementById('metaIngreso').textContent = `Meta: $${META_MENSUAL} (${pct}%)`;
+  document.getElementById('progressIngreso').style.width = Math.min(pct, 100) + '%';
+  
+  const promServ = diasTrabajados > 0 ? (serviciosTotal / diasTrabajados).toFixed(1) : 0;
+  document.getElementById('promedioServ').textContent = `${promServ}/día`;
+  
+  const pctNomina = ingresoTotal > 0 ? (nominaTotal / ingresoTotal * 100).toFixed(0) : 0;
+  document.getElementById('pctNomina').textContent = `${pctNomina}% del ingreso`;
+  
+  document.getElementById('juanDias').textContent = juanDias;
+  document.getElementById('juanPago').textContent = `$${juanPago.toFixed(0)}`;
+  document.getElementById('reneDias').textContent = reneDias;
+  document.getElementById('renePago').textContent = `$${renePago.toFixed(0)}`;
+  document.getElementById('danielDias').textContent = danielDias;
+  document.getElementById('danielPago').textContent = `$${danielPago.toFixed(0)}`;
+  document.getElementById('nominaTotalModal').textContent = `$${nominaTotal.toFixed(0)}`;
+  
+  // Settings
+  document.getElementById('diasTrabajadosSetting').textContent = diasTrabajados;
+  const promDiario = diasTrabajados > 0 ? (ingresoTotal / diasTrabajados).toFixed(0) : 0;
+  document.getElementById('promedioDiarioSetting').textContent = `$${promDiario}`;
+  document.getElementById('mejorDiaSetting').textContent = mejorDia.ingreso > 0 
+    ? `${mejorDia.dia} Mar ($${mejorDia.ingreso.toFixed(0)})` 
+    : '-';
+  
+  Object.keys(semanas).forEach(sem => {
+    const el = document.getElementById(`total_semana_${sem}`);
+    if (el) {
+      el.textContent = `$${semanas[sem].toFixed(0)}`;
+      const header = el.closest('.week-header');
+      if (semanas[sem] >= META_SEMANAL) {
+        header.style.background = '#4CAF50';
+      } else if (semanas[sem] >= META_SEMANAL * 0.7) {
+        header.style.background = '#C9A84C';
+      } else {
+        header.style.background = '#0a0f18';
+      }
+    }
+  });
+  
+  // Actualizar paneles inteligentes
+  generarPanelSemanaActual();
+  generarPanelProyeccion();
+  generarPanelAlertas();
+}
+
+// NUEVAS FUNCIONES - PANELES INTELIGENTES
+function generarPanelSemanaActual() {
+  const container = document.getElementById('panelSemanaActual');
+  if (!container) return;
+  
+  const hoy = new Date();
+  const diaActual = hoy.getDate();
+  const mesHoy = hoy.getMonth();
+  const yearHoy = hoy.getFullYear();
+  
+  // Solo mostrar si estamos en el mes actual
+  if (mesHoy !== mesActual || yearHoy !== yearActual) {
+    container.innerHTML = '';
+    return;
+  }
+  
+  const semanaActual = Math.ceil(diaActual / 7);
+  const primerDiaSemana = ((semanaActual - 1) * 7) + 1;
+  const ultimoDiaSemana = Math.min(semanaActual * 7, new Date(yearActual, mesActual + 1, 0).getDate());
+  
+  let ingresoSemana = 0;
+  let diasRestantes = 0;
+  
+  for (let dia = primerDiaSemana; dia <= ultimoDiaSemana; dia++) {
+    if (datos[dia] && datos[dia].abierto) {
+      ingresoSemana += datos[dia].ingreso;
+    }
+    if (dia > diaActual && new Date(yearActual, mesActual, dia).getDay() !== 0) {
+      diasRestantes++;
+    }
+  }
+  
+  const pctMeta = (ingresoSemana / META_SEMANAL * 100).toFixed(0);
+  const falta = META_SEMANAL - ingresoSemana;
+  const necesitaPorDia = diasRestantes > 0 ? (falta / diasRestantes).toFixed(0) : 0;
+  
+  let panelClass = 'alert-panel';
+  if (pctMeta >= 100) panelClass += ' success';
+  else if (pctMeta >= 70) panelClass += ' warning';
+  else if (pctMeta < 50) panelClass += ' danger';
+  
+  container.innerHTML = `
+    <div class="${panelClass}">
+      <div class="alert-title">🎯 SEMANA ACTUAL (Semana ${semanaActual})</div>
+      <div class="alert-content">
+        <div class="alert-item">
+          <div class="alert-label">Llevas</div>
+          <div class="alert-value">$${ingresoSemana.toFixed(0)}</div>
+        </div>
+        <div class="alert-item">
+          <div class="alert-label">Meta</div>
+          <div class="alert-value">$${META_SEMANAL}</div>
+        </div>
+        <div class="alert-item">
+          <div class="alert-label">Faltan</div>
+          <div class="alert-value">$${Math.max(0, falta).toFixed(0)}</div>
+        </div>
+        <div class="alert-item">
+          <div class="alert-label">Progreso</div>
+          <div class="alert-value">${pctMeta}%</div>
+        </div>
+      </div>
+      ${diasRestantes > 0 ? `
+        <div class="alert-message">
+          📊 Necesitas <strong>$${necesitaPorDia}/día</strong> los próximos ${diasRestantes} días para alcanzar la meta semanal
+        </div>
+      ` : ''}
+    </div>
+  `;
+}
+
+function generarPanelProyeccion() {
+  const container = document.getElementById('panelProyeccion');
+  if (!container) return;
+  
+  const hoy = new Date();
+  const diaActual = hoy.getDate();
+  const mesHoy = hoy.getMonth();
+  const yearHoy = hoy.getFullYear();
+  
+  // Solo mostrar si estamos en el mes actual
+  if (mesHoy !== mesActual || yearHoy !== yearActual) {
+    container.innerHTML = '';
+    return;
+  }
+  
+  let ingresoTotal = 0;
+  let diasTrabajados = 0;
+  
+  Object.keys(datos).forEach(dia => {
+    if (parseInt(dia) <= diaActual && datos[dia].abierto) {
+      ingresoTotal += datos[dia].ingreso;
+      diasTrabajados++;
+    }
+  });
+  
+  const promedioDiario = diasTrabajados > 0 ? (ingresoTotal / diasTrabajados) : 0;
+  const diasEnMes = new Date(yearActual, mesActual + 1, 0).getDate();
+  const diasRestantesMes = Math.max(0, diasEnMes - diaActual);
+  const diasHabilesRestantes = Math.floor(diasRestantesMes * 0.85); // Asumiendo 85% días hábiles
+  
+  const proyeccionMes = ingresoTotal + (promedioDiario * diasHabilesRestantes);
+  const diferenciaMeta = proyeccionMes - META_MENSUAL;
+  const necesitaPorDia = diasHabilesRestantes > 0 ? ((META_MENSUAL - ingresoTotal) / diasHabilesRestantes).toFixed(0) : 0;
+  
+  container.innerHTML = `
+    <div class="projection-panel">
+      <div class="projection-title">📊 PROYECCIÓN DEL MES</div>
+      <div class="projection-grid">
+        <div class="projection-row">
+          <span class="projection-label">Al ritmo actual llegarás a:</span>
+          <span class="projection-value ${diferenciaMeta >= 0 ? 'positive' : 'negative'}">
+            $${proyeccionMes.toFixed(0)}
+          </span>
+        </div>
+        <div class="projection-row">
+          <span class="projection-label">Promedio diario actual:</span>
+          <span class="projection-value">$${promedioDiario.toFixed(0)}</span>
+        </div>
+        <div class="projection-row">
+          <span class="projection-label">Para llegar a meta necesitas:</span>
+          <span class="projection-value ${necesitaPorDia <= promedioDiario ? 'positive' : 'negative'}">
+            $${necesitaPorDia}/día
+          </span>
+        </div>
+        <div class="projection-row">
+          <span class="projection-label">Días hábiles restantes:</span>
+          <span class="projection-value">${diasHabilesRestantes}</span>
+        </div>
+      </div>
+    </div>
+  `;
+}
+
+function generarPanelAlertas() {
+  const container = document.getElementById('panelAlertas');
+  if (!container) return;
+  
+  const hoy = new Date();
+  const diaActual = hoy.getDate();
+  const mesHoy = hoy.getMonth();
+  const yearHoy = hoy.getFullYear();
+  
+  // Solo mostrar si estamos en el mes actual
+  if (mesHoy !== mesActual || yearHoy !== yearActual) {
+    container.innerHTML = '';
+    return;
+  }
+  
+  const semanaActual = Math.ceil(diaActual / 7);
+  const primerDiaSemana = ((semanaActual - 1) * 7) + 1;
+  const ultimoDiaSemana = Math.min(semanaActual * 7, new Date(yearActual, mesActual + 1, 0).getDate());
+  
+  let ingresoSemana = 0;
+  for (let dia = primerDiaSemana; dia <= ultimoDiaSemana; dia++) {
+    if (datos[dia] && datos[dia].abierto) {
+      ingresoSemana += datos[dia].ingreso;
+    }
+  }
+  
+  const pctMeta = (ingresoSemana / META_SEMANAL * 100);
+  
+  // Solo mostrar alerta si está por debajo del 50% de la meta semanal
+  if (pctMeta < 50 && pctMeta > 0) {
+    const falta = META_SEMANAL - ingresoSemana;
+    container.innerHTML = `
+      <div class="alert-panel danger">
+        <div class="alert-title">⚠️ ALERTA DE META</div>
+        <div class="alert-message">
+          Llevas <strong>${pctMeta.toFixed(0)}%</strong> de la meta semanal. 
+          Necesitas <strong>$${falta.toFixed(0)} más</strong> esta semana para recuperar el ritmo.
+        </div>
+      </div>
+    `;
+  } else {
+    container.innerHTML = '';
+  }
+}
+
+// AUTO-GUARDADO (sin alerta)
+let autoGuardarTimeout;
+function autoGuardar() {
+  clearTimeout(autoGuardarTimeout);
+  autoGuardarTimeout = setTimeout(() => {
+    localStorage.setItem(`andrade_${yearActual}_${mesActual}`, JSON.stringify(datos));
+    // Guardado silencioso - sin alerta
+  }, 500); // Espera 500ms después del último cambio
+}
+
+function guardarDatos() {
+  localStorage.setItem(`andrade_${yearActual}_${mesActual}`, JSON.stringify(datos));
+  alert('✅ Datos guardados');
+}
+
+function cargarDatos() {
+  const guardado = localStorage.getItem(`andrade_${yearActual}_${mesActual}`);
+  if (guardado) {
+    datos = JSON.parse(guardado);
+    generarDias();
+    generarResumenSemanas();
+    alert('✅ Datos cargados');
+  } else {
+    alert('⚠️ No hay datos guardados');
+  }
+}
+
+function resetearMes() {
+  if (confirm('¿Resetear todo el mes?')) {
+    inicializarMes();
+    generarDias();
+    generarResumenSemanas();
+    alert('✅ Mes reseteado');
+  }
+}
+
+// EXPORTAR/IMPORTAR DATOS
+function exportarDatos() {
+  // Recopilar todos los datos
+  const exportData = {
+    version: '2.0',
+    fecha: new Date().toISOString(),
+    mes: mesActual,
+    year: yearActual,
+    datos: datos,
+    salarios: salarios,
+    metas: metas
+  };
+  
+  // Convertir a JSON
+  const jsonData = JSON.stringify(exportData);
+  
+  // Convertir a Base64 para hacerlo más compacto
+  const base64Data = btoa(jsonData);
+  
+  // Crear un textarea temporal para copiar
+  const textarea = document.createElement('textarea');
+  textarea.value = base64Data;
+  textarea.style.position = 'fixed';
+  textarea.style.opacity = '0';
+  document.body.appendChild(textarea);
+  textarea.select();
+  
+  try {
+    document.execCommand('copy');
+    document.body.removeChild(textarea);
+    
+    // Mostrar el código en un alert para copiarlo
+    const mensaje = `✅ Datos copiados al portapapeles!\n\n` +
+                   `También puedes copiar este código:\n\n` +
+                   `${base64Data.substring(0, 50)}...\n\n` +
+                   `📋 El código completo está en tu portapapeles.\n` +
+                   `Guárdalo para importar en otra versión.`;
+    
+    alert(mensaje);
+  } catch (err) {
+    // Si falla el copy, mostrar el código para copiar manualmente
+    const mensaje = `📤 CÓDIGO DE EXPORTACIÓN\n\n` +
+                   `Copia todo este código:\n\n${base64Data}\n\n` +
+                   `Guárdalo para importar en otra versión.`;
+    prompt('Copia este código (Ctrl+C o mantén presionado):', base64Data);
+  }
+}
+
+function importarDatos() {
+  const codigo = prompt(
+    '📥 IMPORTAR DATOS\n\n' +
+    'Pega el código que exportaste:\n' +
+    '(El código largo que copiaste con Exportar)'
+  );
+  
+  if (!codigo || codigo.trim() === '') {
+    return; // Cancelado
+  }
+  
+  try {
+    // Decodificar Base64
+    const jsonData = atob(codigo.trim());
+    const importData = JSON.parse(jsonData);
+    
+    // Validar versión
+    if (!importData.version || !importData.datos) {
+      alert('❌ Código inválido. Asegúrate de copiar el código completo.');
+      return;
+    }
+    
+    // Confirmar importación
+    const fechaExport = new Date(importData.fecha).toLocaleDateString('es-ES');
+    const mesNombre = MESES[importData.mes];
+    
+    const confirmar = confirm(
+      `¿Importar datos?\n\n` +
+      `📅 Mes: ${mesNombre} ${importData.year}\n` +
+      `📊 Exportado: ${fechaExport}\n` +
+      `⚠️ Esto reemplazará los datos actuales del mes.`
+    );
+    
+    if (!confirmar) return;
+    
+    // Importar datos
+    datos = importData.datos;
+    
+    // Importar salarios si existen
+    if (importData.salarios) {
+      salarios = importData.salarios;
+      guardarSalarios();
+      actualizarSalariosUI();
+    }
+    
+    // Importar metas si existen
+    if (importData.metas) {
+      metas = importData.metas;
+      guardarMetas();
+    }
+    
+    // Guardar y actualizar
+    localStorage.setItem(`andrade_${yearActual}_${mesActual}`, JSON.stringify(datos));
+    generarDias();
+    generarResumenSemanas();
+    actualizarTotales();
+    
+    alert(`✅ Datos importados correctamente!\n\n📊 ${mesNombre} ${importData.year}`);
+    
+  } catch (err) {
+    alert('❌ Error al importar datos.\n\nVerifica que el código esté completo y sea correcto.');
+    console.error('Error importando:', err);
+  }
+}
+
+// CHARTS FUNCTIONS
+function generarGraficas() {
+  generarGraficaSemanas();
+  generarGraficaTendencia();
+}
+
+function generarGraficaSemanas() {
+  const container = document.getElementById('chartSemanas');
+  if (!container) return;
+  container.innerHTML = '';
+  
+  const diasEnMes = new Date(yearActual, mesActual + 1, 0).getDate();
+  const numSemanas = Math.ceil(diasEnMes / 7);
+  const semanas = {};
+  
+  Object.keys(datos).forEach(dia => {
+    const numSemana = Math.ceil(parseInt(dia) / 7);
+    if (!semanas[numSemana]) semanas[numSemana] = 0;
+    if (datos[dia].abierto) {
+      semanas[numSemana] += datos[dia].ingreso;
+    }
+  });
+  
+  const maxIngreso = Math.max(...Object.values(semanas), META_SEMANAL, 1);
+  
+  for (let s = 1; s <= numSemanas; s++) {
+    const valor = semanas[s] || 0;
+    const height = (valor / maxIngreso) * 100;
+    
+    const bar = document.createElement('div');
+    bar.className = 'bar';
+    bar.style.height = height + '%';
+    bar.innerHTML = `
+      <div class="bar-value">$${valor.toFixed(0)}</div>
+      <div class="bar-label">S${s}</div>
+    `;
+    container.appendChild(bar);
+  }
+}
+
+function generarGraficaTendencia() {
+  const svg = document.getElementById('chartTendencia');
+  if (!svg) return;
+  
+  svg.innerHTML = `
+    <defs>
+      <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" style="stop-color:#C9A84C;stop-opacity:0.4" />
+        <stop offset="100%" style="stop-color:#C9A84C;stop-opacity:0" />
+      </linearGradient>
+    </defs>
+  `;
+  
+  const diasEnMes = new Date(yearActual, mesActual + 1, 0).getDate();
+  const ingresos = [];
+  let acumulado = 0;
+  
+  for (let dia = 1; dia <= diasEnMes; dia++) {
+    if (datos[dia] && datos[dia].abierto) {
+      acumulado += datos[dia].ingreso;
+    }
+    ingresos.push(acumulado);
+  }
+  
+  const maxIngreso = Math.max(...ingresos, META_MENSUAL, 1);
+  const width = 300;
+  const height = 180;
+  const padding = 10;
+  
+  let pathData = '';
+  let areaData = '';
+  ingresos.forEach((valor, index) => {
+    const x = padding + (index / (diasEnMes - 1)) * (width - padding * 2);
+    const y = height - padding - ((valor / maxIngreso) * (height - padding * 2));
+    pathData += `${index === 0 ? 'M' : 'L'} ${x} ${y} `;
+    if (index === 0) areaData = `M ${x} ${height - padding} L ${x} ${y} `;
+    else areaData += `L ${x} ${y} `;
+  });
+  areaData += `L ${width - padding} ${height - padding} Z`;
+  
+  svg.innerHTML += `
+    <path class="line-area" d="${areaData}" />
+    <path class="line-path" d="${pathData}" />
+  `;
+  
+  const metaY = height - padding - ((META_MENSUAL / maxIngreso) * (height - padding * 2));
+  svg.innerHTML += `
+    <line x1="${padding}" y1="${metaY}" x2="${width - padding}" y2="${metaY}" 
+          stroke="#4CAF50" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+  `;
+}
+
+// GOALS FUNCTIONS
+let metas = {
+  mensual: 1680,
+  semanal: 375,
+  diaria: 56
+};
+
+function cargarMetas() {
+  const guardadas = localStorage.getItem('andrade_metas');
+  if (guardadas) {
+    metas = JSON.parse(guardadas);
+    document.getElementById('metaMensual').value = metas.mensual;
+    document.getElementById('metaSemanal').value = metas.semanal;
+    document.getElementById('metaDiaria').value = metas.diaria;
+  }
+}
+
+function guardarMetas() {
+  localStorage.setItem('andrade_metas', JSON.stringify(metas));
+}
+
+function editarMeta(tipo) {
+  const input = document.getElementById(`meta${tipo.charAt(0).toUpperCase() + tipo.slice(1)}`);
+  input.readOnly = false;
+  input.focus();
+  input.select();
+  
+  input.onblur = function() {
+    const nuevoValor = parseFloat(input.value);
+    if (!isNaN(nuevoValor) && nuevoValor > 0) {
+      metas[tipo] = nuevoValor;
+      guardarMetas();
+      actualizarMetas();
+    }
+    input.readOnly = true;
+  };
+}
+
+function actualizarMetas() {
+  metas.mensual = parseFloat(document.getElementById('metaMensual').value) || 1680;
+  metas.semanal = parseFloat(document.getElementById('metaSemanal').value) || 375;
+  metas.diaria = parseFloat(document.getElementById('metaDiaria').value) || 56;
+  
+  let ingresoTotal = 0, diasTrabajados = 0, ingresoHoy = 0;
+  const hoy = new Date();
+  const diaHoy = hoy.getDate();
+  const mesHoy = hoy.getMonth();
+  const yearHoy = hoy.getFullYear();
+  
+  const numSemanaActual = Math.ceil(diaHoy / 7);
+  let ingresoSemanaActual = 0;
+  
+  Object.keys(datos).forEach(dia => {
+    const d = datos[dia];
+    if (d.abierto) {
+      ingresoTotal += d.ingreso;
+      diasTrabajados++;
+      
+      const numSemana = Math.ceil(parseInt(dia) / 7);
+      if (numSemana === numSemanaActual) {
+        ingresoSemanaActual += d.ingreso;
+      }
+      
+      if (mesHoy === mesActual && parseInt(dia) === diaHoy && yearHoy === yearActual) {
+        ingresoHoy = d.ingreso;
+      }
+    }
+  });
+  
+  // Meta Mensual
+  const pctMensual = (ingresoTotal / metas.mensual * 100).toFixed(0);
+  const faltaMensual = Math.max(0, metas.mensual - ingresoTotal);
+  document.getElementById('metaMensualActual').textContent = `$${ingresoTotal.toFixed(0)}`;
+  document.getElementById('progressMensual').style.width = Math.min(pctMensual, 100) + '%';
+  document.getElementById('pctMensual').textContent = pctMensual + '%';
+  document.getElementById('faltaMensual').textContent = `$${faltaMensual.toFixed(0)}`;
+  
+  const progMensual = document.getElementById('progressMensual');
+  if (pctMensual >= 100) progMensual.className = 'goal-progress-fill';
+  else if (pctMensual >= 70) progMensual.className = 'goal-progress-fill';
+  else if (pctMensual >= 40) progMensual.className = 'goal-progress-fill warning';
+  else progMensual.className = 'goal-progress-fill danger';
+  
+  // Meta Semanal
+  const pctSemanal = (ingresoSemanaActual / metas.semanal * 100).toFixed(0);
+  const faltaSemanal = Math.max(0, metas.semanal - ingresoSemanaActual);
+  document.getElementById('metaSemanalActual').textContent = `$${ingresoSemanaActual.toFixed(0)}`;
+  document.getElementById('progressSemanal').style.width = Math.min(pctSemanal, 100) + '%';
+  document.getElementById('pctSemanal').textContent = pctSemanal + '%';
+  document.getElementById('faltaSemanal').textContent = `$${faltaSemanal.toFixed(0)}`;
+  
+  const progSemanal = document.getElementById('progressSemanal');
+  if (pctSemanal >= 100) progSemanal.className = 'goal-progress-fill';
+  else if (pctSemanal >= 70) progSemanal.className = 'goal-progress-fill';
+  else if (pctSemanal >= 40) progSemanal.className = 'goal-progress-fill warning';
+  else progSemanal.className = 'goal-progress-fill danger';
+  
+  // Meta Diaria
+  const promedio = diasTrabajados > 0 ? (ingresoTotal / diasTrabajados) : 0;
+  const pctDiaria = (ingresoHoy / metas.diaria * 100).toFixed(0);
+  document.getElementById('metaDiariaActual').textContent = `$${ingresoHoy.toFixed(0)}`;
+  document.getElementById('progressDiaria').style.width = Math.min(pctDiaria, 100) + '%';
+  document.getElementById('hoyIngreso').textContent = `$${ingresoHoy.toFixed(0)}`;
+  document.getElementById('promedioDiario').textContent = `$${promedio.toFixed(0)}`;
+  
+  const progDiaria = document.getElementById('progressDiaria');
+  if (pctDiaria >= 100) progDiaria.className = 'goal-progress-fill';
+  else if (pctDiaria >= 70) progDiaria.className = 'goal-progress-fill';
+  else if (pctDiaria >= 40) progDiaria.className = 'goal-progress-fill warning';
+  else progDiaria.className = 'goal-progress-fill danger';
+}
+
+// CALCULATOR FUNCTIONS
+let calcValue = '0';
+let calcPrevious = null;
+let calcOperation = null;
+let calcWaiting = false;
+
+function calcClear() {
+  calcValue = '0';
+  calcPrevious = null;
+  calcOperation = null;
+  calcWaiting = false;
+  document.getElementById('calcResult').textContent = '0';
+  document.getElementById('calcOperation').textContent = '';
+}
+
+function calcNum(num) {
+  if (calcWaiting) {
+    calcValue = num;
+    calcWaiting = false;
+  } else {
+    calcValue = calcValue === '0' ? num : calcValue + num;
+  }
+  document.getElementById('calcResult').textContent = calcValue;
+}
+
+function calcOp(op) {
+  const input = parseFloat(calcValue);
+  
+  if (calcPrevious === null) {
+    calcPrevious = input;
+  } else if (calcOperation) {
+    const result = calcDoOperation();
+    calcValue = String(result);
+    calcPrevious = result;
+    document.getElementById('calcResult').textContent = calcValue;
+  }
+  
+  calcWaiting = true;
+  calcOperation = op;
+  document.getElementById('calcOperation').textContent = `${calcPrevious} ${op}`;
+}
+
+function calcDoOperation() {
+  const prev = calcPrevious;
+  const current = parseFloat(calcValue);
+  
+  switch(calcOperation) {
+    case '+': return prev + current;
+    case '-': return prev - current;
+    case '*': return prev * current;
+    case '/': return prev / current;
+    default: return current;
+  }
+}
+
+function calcEquals() {
+  if (calcOperation && calcPrevious !== null) {
+    const result = calcDoOperation();
+    document.getElementById('calcResult').textContent = result.toFixed(2);
+    document.getElementById('calcOperation').textContent = '';
+    calcValue = String(result);
+    calcPrevious = null;
+    calcOperation = null;
+    calcWaiting = false;
+  }
+}
+
+function calcPercent() {
+  const value = parseFloat(calcValue);
+  calcValue = String(value / 100);
+  document.getElementById('calcResult').textContent = calcValue;
+}
+
+function calcPreset(value) {
+  if (calcOperation && calcPrevious !== null) {
+    calcValue = String(value);
+    const result = calcDoOperation();
+    document.getElementById('calcResult').textContent = result.toFixed(2);
+    calcValue = String(result);
+    calcPrevious = null;
+    calcOperation = null;
+  } else {
+    calcValue = String(value);
+    document.getElementById('calcResult').textContent = value.toFixed(2);
+  }
+}
+
+window.onload = function() {
+  cargarSalarios();
+  cargarMetas();
+  
+  // Establecer mes actual en el selector
+  document.getElementById('mesSelector').value = mesActual;
+  actualizarHeaderMes();
+  
+  // Cargar datos del mes actual
+  const guardado = localStorage.getItem(`andrade_${yearActual}_${mesActual}`);
+  if (guardado) {
+    datos = JSON.parse(guardado);
+  } else {
+    inicializarMes();
+  }
+  
+  generarDias();
+  generarResumenSemanas();
+  generarGraficas();
+  actualizarMetas();
+  
+  // Auto-expandir semana actual
+  setTimeout(() => {
+    const hoy = new Date();
+    if (hoy.getMonth() === mesActual && hoy.getFullYear() === yearActual) {
+      const numSemana = Math.ceil(hoy.getDate() / 7);
+      const content = document.getElementById(`content_semana_${numSemana}`);
+      const chevron = document.getElementById(`chevron_${numSemana}`);
+      if (content && chevron) {
+        content.classList.add('expanded');
+        chevron.classList.add('rotated');
+      }
+    }
+  }, 300);
+};
+</script>
+
+</body>
+</html>
